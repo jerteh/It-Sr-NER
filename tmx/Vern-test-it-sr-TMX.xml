@@ -1,0 +1,1726 @@
+<tmx version="1.4" xmlns:xsd="http://tempuri.org/Dataset1.xsd" xmlns:tei="http://www.tei-c.org/ns/1.0">
+	<header creationid="14.3.001" creationtool="ACIDE" creationtoolversion="1.0" segtype="sentence" datatype="plaintext" o-tmf="TEI P5" adminlang="en" srclang="it">
+		<prop type="Domain"/>
+	</header>
+	<body>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1" creationdate="20220814T204937Z">
+				<seg>Jules Verne, Il giro del mondo in 80 giorni</seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1" creationdate="20220814T204937Z">
+				<seg>Žil Vern, Put oko sveta za 80 dana</seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n2" creationdate="20220814T204937Z">
+				<seg>Nell'anno 1872, la casa contraddistinta con il numero 7 in Saville Row, a Burlington Gardens - casa nella quale nel 1814 era morto Sheridan- era abitata dall'egregio signor Phileas Fogg, uno dei membri più singolari e più notati del Club della Riforma di Londra, quantunque egli si studiasse di non fare cosa alcuna che potesse attirare l'attenzione su di lui. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n2" creationdate="20220814T204937Z">
+				<seg>Godine 1872,u kući broj 7 u Ulici Sevil-rou Bar-lington Gardenz,u kojoj je 1816.godine umro Šeridan,  stanovao je gospodin Fileas Fog,jedan od najčudnovatijih i najzapaženijih članova londonskog Reform-kluba,  iako je izgledalo da se on trudi da ne učini ništa što bi  moglo na njega privući pažnju. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n3" creationdate="20220814T204937Z">
+				<seg>Questo Phileas Fogg, che prendeva il posto di uno dei più grandi oratori che sono l'onore dell'Inghilterra, era un personaggio enigmatico, di cui non si sapeva nulla, se non che egli appariva un fior di galantuomo e uno fra i più bei "gentlemen" dell'alta società inglese.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n3" creationdate="20220814T204937Z">
+				<seg>Posle jednog od najvećih govornika kojim se ponosi  Engleska došao je,dakle, Fileas Fog, zagonetna ličnost  o kojoj se nije ništa drugo znalo sem da je to čovek vrlo  uglađen i jedan od najplemenitijih džentlmena visokog  engleskog društva. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n4" creationdate="20220814T204937Z">
+				<seg>Si diceva che egli somigliasse a Byron- nella testa, perché quanto ai piedi non era possibile metterglielo a confronto -, ma era un Byron con i mustacchi e i favoriti, un Byron impassibile, che avrebbe potuto vivere mill'anni senza invecchiare.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n4" creationdate="20220814T204937Z">
+				<seg>Govorilo se da je licem sličan Bajronu - jer su mu  noge bile bez zamerke -, ali jednom Bajronu sa brkovima i zaliscima,jednom hladnom Bajronu koji bi  mogao živeti hiljadu godina a da ne ostari. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n5" creationdate="20220814T204937Z">
+				<seg>Inglese per certo, Phileas Fogg non era forse londinese. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n5" creationdate="20220814T204937Z">
+				<seg>Iako je na prvi pogled bio Englez, Fileas Fog verovatno nije bio Londonac. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n10" creationdate="20220814T204937Z">
+				<seg>Non aveva mai esercitato né alla Corte del Cancelliere, né al Banco della Regina né all'Echiquier né alla Corte ecclesiastica. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n10" creationdate="20220814T204937Z">
+				<seg>Nikada nije bio branilac pred kancelarijskim sudom, ni pred najvišim sudom, ni pred finansijskim sudom, ni pred duhovnim sudom. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n16" creationdate="20220814T204937Z">
+				<seg>un conto in cui Phileas Fogg risultava invariabilmente creditore, quant un que spiccasse con frequenza grossi mandati a vista che i banchieri Baring pagavano puntualmente.  Quest'insieme di cose, come è naturale, gli aveva procurato una profonda stima. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n16" creationdate="20220814T204937Z">
+				<seg>Zahvaljujući tome što su svi njegovi čekovi "po viđenju" bili uredno isplaćivani zaduženjem njegovog skoro neiscrpnog tekućeg računa, on je imao izvestan poslovni ugled. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n17" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg era dunque ricco? </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n17" creationdate="20220814T204937Z">
+				<seg>Da li je taj Fileas Fog bio bogat? </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n18" creationdate="20220814T204937Z">
+				<seg>Senza dubbio. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n18" creationdate="20220814T204937Z">
+				<seg>Svakako. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n19" creationdate="20220814T204937Z">
+				<seg>Ma in che modo si era arricchito?  Ecco ciò che nemmeno i meglio informati potevano dire;  e il signor Fogg era proprio l'ultimo a cui convenisse rivolgersi per saperlo. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n19" creationdate="20220814T204937Z">
+				<seg>Ali kako se obogatio,to ni najbolje obavešteni nisu znali reći, a i gospodin Fog je bio poslednji kome se na pristojan  način moglo obratiti radi obaveštenja. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n20" creationdate="20220814T204937Z">
+				<seg>Comunque, egli non si mostrava minimamente prodigo;  ma neanche avaro.  Ogni volta che gli fosse chiesto denaro per un'opera nobile, giusta e generosa, lo dava, senza strombazzamenti o celandosi addirittura dietro l'anonimato. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n20" creationdate="20220814T204937Z">
+				<seg>U svakom slučaju nije bio rasipnik, ali ni tvrdica. Gde god je nešto trebalo za neku plemenitu, korisnu ili velikodušnu stvar, on je davao ćuteći i neopaženo. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n23" creationdate="20220814T204937Z">
+				<seg>Eppure la sua vita si svolgeva, come suol dirsi, alla luce del sole;  ma era così matematicamente uniforme, che le immaginazioni insoddisfatte fantasticavano, cercando al di là delle apparenze. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n23" creationdate="20220814T204937Z">
+				<seg>Pri svemu tome živeo je javno, i sve što je činio bilo je  na dlaku isto, tako da su ljudi u svojoj nezadovoljenoj  mašti tražili još nešto iza toga. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n24" creationdate="20220814T204937Z">
+				<seg>Aveva viaggiato, Sir Phileas Fogg? </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n24" creationdate="20220814T204937Z">
+				<seg>Da li je putovao? </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n25" creationdate="20220814T204937Z">
+				<seg>C'era ragione di supporlo, dato che nessuno meglio di lui conosceva la carta geografica del mondo. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n25" creationdate="20220814T204937Z">
+				<seg>Verovatno,jer niko od njega nije bolje poznavao kartu sveta. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n26" creationdate="20220814T204937Z">
+				<seg>Non esisteva paese, per quanto remoto, di cui egli non mostrasse di avere profonda nozione. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n26" creationdate="20220814T204937Z">
+				<seg>Nije bilo ni najzabitijeg kutka koji on ne bi podrobno poznavao. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n27" creationdate="20220814T204937Z">
+				<seg>Talora con poche parole brevi e chiare rettificava le mille dicerie che circolavano al Club a riguardo di viaggiatori ritenuti periti o dispersi.  Indicava le varie probabilità;  e gli avvenimenti finivano sempre per dargli ragione, tanto che le sue parole venivano ritenute come ispirate da un sesto senso. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n27" creationdate="20220814T204937Z">
+				<seg>Katkada bi sa malo kratkih i jasnih reči ispravljao bezbrojne pripovetke koje su kružile u klubu o izgubljenim ili zalutalim  putnicima; ukazivao je na to šta u stvari može biti  istina, i njegove su reči često bile proročke, jer ih je  događaj uvek opravdavao. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n28" creationdate="20220814T204937Z">
+				<seg>Certo, Sir Phileas Fogg era un uomo che doveva aver viaggiato il mondo intero, almeno in spirito. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n28" creationdate="20220814T204937Z">
+				<seg>Taj je čovek morao proputovati ceo svet - bar u mislima. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n29" creationdate="20220814T204937Z">
+				<seg>Stava peraltro fuor di dubbio che da molti anni egli non si era allontanato da Londra. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n29" creationdate="20220814T204937Z">
+				<seg>Ali, bilo je izvesno da Fileas Fog već niz dugih godina nije napuštao London. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n30" creationdate="20220814T204937Z">
+				<seg>Le persone che avevano l'onore di conoscerlo più da vicino testimoniavano che nessuno poteva pretendere di aver visto quel "gentleman" altrove che nella strada diritta ch'egli percorreva ogni giorno per recarsi da casa al Club. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n30" creationdate="20220814T204937Z">
+				<seg>Oni koji su imali čast da ga bolje poznaju tvrdili su da se niko ne može pohvaliti da ga je video ma na kom drugom mestu sem na putu kojim je išao svaki dan,neposredno od svoje kuće do  kluba. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n31" creationdate="20220814T204937Z">
+				<seg>Suoi soli passatempi erano leggere i giornali e giocare al "whist". </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n31" creationdate="20220814T204937Z">
+				<seg>Jedina mu je zabava bila čitanje novina i igranje  vista. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n32" creationdate="20220814T204937Z">
+				<seg>Questo gioco di carte, che è preferito dagli Inglesi e il cui nome significa "silenzio", era adattissimo al temperamento di Sir Phileas Fogg. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n32" creationdate="20220814T204937Z">
+				<seg>U toj igri koja se ćuteći igrala, a koja je potpuno  odgovarala njegovoj prirodi, on je često dobijao. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n33" creationdate="20220814T204937Z">
+				<seg>Egli vinceva sovente, ma quei guadagni non entravano mai nella sua borsa: figuravano invece per una somma rilevante nel suo bilancio di carità. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n33" creationdate="20220814T204937Z">
+				<seg>Međutim, ti dobici nikada nisu ulazili u njegov džep nego  su predstavljali znatne sume u njegovom budžetu za  dobročinstva. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n34" creationdate="20220814T204937Z">
+				<seg>Del resto il signor Fogg giocava soltanto per giocare, non per vincere. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n34" creationdate="20220814T204937Z">
+				<seg>Treba,uostalom,reći da je gospodin Fog  igrao radi igre a ne radi dobitka. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n35" creationdate="20220814T204937Z">
+				<seg>Il gioco era per lui un combattimento, una lotta contro una difficoltà, ma una lotta senza spostamento, senza moto, senza fatica;  e ciò aderiva al suo carattere. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n35" creationdate="20220814T204937Z">
+				<seg>Igra je za njega bila bitka, borba sa teškoćama, ali borba bez kretanja, bez prepreka, bez napora, a to je odgovaralo njegovom karakteru. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n53" creationdate="20220814T204937Z">
+				<seg>Allo scoccare delle undici e mezzo il signor Fogg doveva, come era sua quotidiana abitudine, lasciare la casa e recarsi al Club. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n53" creationdate="20220814T204937Z">
+				<seg>Tačno u jedanaest i po časova gospodin Fog je po svom svakidašnjem običaju izlazio iz kuće i odlazio u Reform-klub. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n54" creationdate="20220814T204937Z">
+				<seg>Mancavano dieci minuti.  In quel punto si udì bussare all'uscio del salotto.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n54" creationdate="20220814T204937Z">
+				<seg>U tom trenutku neko zakuca na vrata maloga salona u kome se nalazio Fileas Fog. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n55" creationdate="20220814T204937Z">
+				<seg>James Forster, il servo licenziato, comparve. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n55" creationdate="20220814T204937Z">
+				<seg>Ukaza se otpušteni Džems Forster. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n62" creationdate="20220814T204937Z">
+				<seg>poi, per utilizzare in pieno i miei talenti, sono diventato professore di ginnastica;  e infine sergente dei pompieri di Parigi. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n62" creationdate="20220814T204937Z">
+				<seg>zatim sam, da bih svoje sposobnosti bolje iskoristio, postao nastavnik gimnastike, i, najzad, bio sam vatrogasni podoficir u Parizu.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n63" creationdate="20220814T204937Z">
+				<seg>Ho anzi nel mio stato di servizio diversi incendi notevoli. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n63" creationdate="20220814T204937Z">
+				<seg>U svojoj knjižici imam beleške o čuvenim požarima.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n64" creationdate="20220814T204937Z">
+				<seg>Ma ora già da cinque anni ho lasciato la Francia e, desideroso di gustare la vita di famiglia, faccio il cameriere in Inghilterra. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n64" creationdate="20220814T204937Z">
+				<seg>Ali je već pet godina kako sam ostavio Francusku i želeći da uživam u porodičnom životu, postao sam sobar u Engleskoj.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n65" creationdate="20220814T204937Z">
+				<seg>Trovandomi senza posto, e avendo saputo che il signor Phileas Fogg è l'uomo più esatto e più sedentario di tutto il Regno Unito, mi presento in casa del signore, con la speranza di viverci tranquillo e di dimenticare persino questo soprannome di Passepartout. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n65" creationdate="20220814T204937Z">
+				<seg>Kako sam upravo ostao bez službe, a saznavši da je gospodin Fileas Fog najtačniji i najstalniji čovek Ujedinjenog Kraljevstva, predstavljam se gospodinu nadajući  se da ću ovde spokojno živeti i zaboraviti i na samo ime  Paspartu...  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n90" creationdate="20220814T204937Z">
+				<seg>Passepartout il quale, da fisionomista acuto qual era, non aveva trascurato di osservare financo l'"espressione" dei suoi piedi e delle sue mani, lo giudicava senz'altro un individuo equilibratissimo, ponderato al massimo, esatto come un cronometro: la precisione personificata.  Non si sbagliava. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n90" creationdate="20220814T204937Z">
+				<seg>Posmatran na raznim poslovima u njegovom životu, ovaj  džentlmen je davao utisak jednog dobro uravnoteženog  bića u svim pojedinostima, odmeren, savršen kao hronometar Leroa ili Irn Šoa. Zaista, Fileas Fog beše oličenje tačnosti, što se jasno videlo po "izrazu njegovih nogu i ruku", jer kod čoveka i kod životinja i udovi su izraziti organi strasti. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n100" creationdate="20220814T204937Z">
+				<seg>Passepartout non aveva peraltro nulla di comune con quei tipi, frequentissimi tra i suoi concittadini e nella sua categoria, i quali - spalle alte, naso al vento, occhio spavaldo e duro - non sono in fin dei conti che degli impudenti cialtroni. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n100" creationdate="20220814T204937Z">
+				<seg>Paspartu nije bio kakav Fronten niti Maskaril  koji sa podignutim ramenima, uzdignutim nosom, drskim pogledom, hladnim okom, ipak nisu drugo do bestidni lupeži. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n105" creationdate="20220814T204937Z">
+				<seg>Se gli scultori dell'antichità conoscevano diciotto maniere d'acconciare la capigliatura della dea Minerva, Passepartout non ne conosceva che una per ravviare la propria: tre colpi di pettine, e tutto era fatto.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n105" creationdate="20220814T204937Z">
+				<seg>Ako su antički vajari znali na osamnaest načina da nameste  Minervinu kosu, Paspartu je znao za svoju kosu samo  jedan način: triput bi pogladio kosu češljem i bio bi  očešljan. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n106" creationdate="20220814T204937Z">
+				<seg>La più elementare prudenza non ci permette di decidere se e quanto avrebbe potuto accordarsi con il carattere del signor Phileas Fogg quello espansivo del suo nuovo servitore. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n106" creationdate="20220814T204937Z">
+				<seg>Ni uz najveću opreznost ne može se reći da li će se  otvoren karakter ovog momka moći složiti sa karakterom Fileasa Foga. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n149" creationdate="20220814T204937Z">
+				<seg>una vera macchina. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n149" creationdate="20220814T204937Z">
+				<seg>Prava mašina!  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n150" creationdate="20220814T204937Z">
+				<seg>E bene, sissignori, sono felicissimo di servire una macchina!". </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n150" creationdate="20220814T204937Z">
+				<seg>Pa lepo, nije mi krivo što služim jednu mašinu!  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n151" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg aveva lasciato la sua abitazione di Saville Row alle undici e mezzo;  e dopo aver posto cinquecentosettantacinque volte il piede destro davanti al piede sinistro, e cinquecentosettantasei volte il piede sinistro davanti al piede destro, giunse al magnifico palazzo del Club della Riforma, in Pall Mall, la cui costruzione è costata almeno tre milioni. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n151" creationdate="20220814T204937Z">
+				<seg>Fileas Fog je izašao iz svoje kuće u Sevil-rou u jedanaest i po časova, i pošto je pet stotina sedamdeset  pet puta stavio desnu nogu ispred leve i pet stotina sedamdeset šest puta levu nogu ispred desne, stigao je u  Reform-klub, prostranu zgradu, podignutu u Pel-Melu, čija je izgradnja stajala najmanje tri miliona livara. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n152" creationdate="20220814T204937Z">
+				<seg>Si recò subito nella sala da pranzo, dalle cui finestre aperte su un bel giardino si vedevano gli alberi indorati dal sole d'autunno. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n152" creationdate="20220814T204937Z">
+				<seg>Fileas Fog se odmah uputio u ručaonicu, čijih je devet prozora gledalo na lep vrt sa drvećem koje je jesen  već bila pozlatila. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n153" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg prese posto alla solita tavola già apparecchiata per lui. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n153" creationdate="20220814T204937Z">
+				<seg>Tu sede za uobičajeni sto koji je za njega bio postavljen. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n154" creationdate="20220814T204937Z">
+				<seg>Il suo pasto si componeva di un antipasto, un pesce lessato e messo in salsa di prima qualità, un bel "roast beef" roseo e acidulato con funghi, un pasticcio farcito con lamponi verdi e cime di rapontico, una porzione di finissimo formaggio;  il tutto innaffiato di qualche tazza d'un tè proveniente da una speciale raccolta riservata per il consumo del Club.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n154" creationdate="20220814T204937Z">
+				<seg>Ručak mu se sastojao od jednog predjela, kuvane ribe začinjene "reading" sosom najbolje vrste, krvavo crvenog rostbifa začinjenog gljivama, kolača punjenih stabljikama ravente i zelenim ribizlama, česterskog sira, - sve je to bilo zaliveno se nekoliko  šolja odličnog čaja, naročito nabranog za potrebe Reform kluba. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n155" creationdate="20220814T204937Z">
+				<seg>A mezzogiorno e quarantasette minuti il puntualissimo "gentleman" si alzò, e passò nel salone adorno di dipinti in artistiche cornici. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n155" creationdate="20220814T204937Z">
+				<seg>U dvanaest časova i četrdeset sedam minuta naš  džentlmen ustade i uputi se ka velikom salonu, raskošnoj odaji ukrašenoj bogato uokvirenim slikama. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n156" creationdate="20220814T204937Z">
+				<seg>Qui un cameriere gli porse il "Times" con le pagine ancora da tagliare.  Fogg lo spiegò con una sicurezza di mano che denotava la sua lunga abitudine in così complicata operazione. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n156" creationdate="20220814T204937Z">
+				<seg>Tu mu jedan poslužitelj predade nerazrezan Tajms, koji Fileas  Fog razvi sa velikom sigurnošću, koja je svedočila o velikoj veštini u tako teškom poslu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n157" creationdate="20220814T204937Z">
+				<seg>La lettura del "Times" tenne assorbito il "gentleman" fino alle tre e quarantacinque;  e quella dello "Standard", a cui egli passò subito dopo, durò fino all'ora della cena. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n157" creationdate="20220814T204937Z">
+				<seg>Čitanjem tih novina zanimao se Fileas Fog do tri časa i četrdeset minuta, a zatim je čitao Standard do večere. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n158" creationdate="20220814T204937Z">
+				<seg>Questo pasto si svolse nelle identiche condizioni del pranzo, con l'aggiunta della "royal british sauce".  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n158" creationdate="20220814T204937Z">
+				<seg>Ova je bila ista kao i ručak, sa dodatkom "kraljevskog britanskog sosa". </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n159" creationdate="20220814T204937Z">
+				<seg>Alle sei meno venti minuti, Sir Phileas Fogg comparve nel salone;  e vi rimase sprofondato nella lettura nel "Morning Chronicle".  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n159" creationdate="20220814T204937Z">
+				<seg>U pet časova i četrdeset minuta naš džentlmen  opet se pojavio u velikom salonu i udubio u čitanje Morning-kronikl-a. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n160" creationdate="20220814T204937Z">
+				<seg>Intanto il salone del Club andava popolandosi.  Numerosi frequentatori facevano via via il loro ingresso, e sedevano avvicinando le poltrone al caminetto in cui ardeva un bel fuoco di carbon fossile. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n160" creationdate="20220814T204937Z">
+				<seg>Pola časa kasnije uđoše u salon i neki članovi Reform-kluba i približiše se kaminu u kojem je goreo kameni ugalj. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n161" creationdate="20220814T204937Z">
+				<seg>Erano i compagni abituali del signor Phileas Fogg, al par di lui ostinati giocatori di "whist", tutti personaggi di cospicua ricchezza, pezzi grossi dell'industria e della finanza: l'ingegnere Andrew Stuart, i banchieri John Sullivan e Samuel Fallentin, il signor Thomas Flanagan, proprietario delle più grandi fabbriche londinesi di birra, e Walter Ralph, uno degli amministratori della Banca d'Inghilterra.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n161" creationdate="20220814T204937Z">
+				<seg>To su bili redovni partneri, strasni igrači  vista; inženjer Endrju Tomas, bankari Džon Sulivan i  Samuel Falentin, pivar Tomas Flenegen, Gotjer Ralf,  činovnik Engleske banke, - bogate i ugledne ličnosti  čak i u tom klubu koji među svojim članovima ima  industrijske i finansijske prvake. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n162" creationdate="20220814T204937Z">
+				<seg>- Ebbene, signor Ralph, - domandò Thomas Flanagan, - avete novità sull'affare del furto? </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n162" creationdate="20220814T204937Z">
+				<seg>-- No Ralfe,  upita Tomas Flenegen -- kako stoji  stvar s tom krađom?  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n163" creationdate="20220814T204937Z">
+				<seg>- Eh! - intervenne Andrew Stuart. - Anche questa volta la Banca d'Inghilterra può dire addio al suo denaro!  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n163" creationdate="20220814T204937Z">
+				<seg>-- Pa, odgovori Endrju Stjuart--  banka će izgubiti svoje novce.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n164" creationdate="20220814T204937Z">
+				<seg>- Io spero invece - dichiarò Walter Ralph, - che metteremo le grinfie addosso al ladro. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n164" creationdate="20220814T204937Z">
+				<seg>-- Ja se nadam  reče Gotjer Ralf -- da  ćemo uhvatiti lopova.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n165" creationdate="20220814T204937Z">
+				<seg>Abilissimi agenti di polizia sono stati inviati in America e in Europa, in tutti i principali porti d'imbarco e di sbarco;  e sarà ben difficile che quel galantuomo sfugga alla loro caccia.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n165" creationdate="20220814T204937Z">
+				<seg>Policijski inspektori, vrlo vešti  ljudi, poslati su u Ameriku i Evropu u sva glavna  pristaništa za ukrcavanje i iskrcavanje, i taj će gospodin  teško umaći.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n166" creationdate="20220814T204937Z">
+				<seg>- Si conoscono dunque i connotati del ladro? - chiese Andrew Stuart.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n166" creationdate="20220814T204937Z">
+				<seg>-- A imaju li lični opis tog lupeža?  upita Endrju Stjuart. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n167" creationdate="20220814T204937Z">
+				<seg>- Anzitutto, non è un ladro - rispose con serietà Walter Ralph. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n167" creationdate="20220814T204937Z">
+				<seg>-- Pre svega, to nije lupež  ozbiljno odgovori Gotjer Ralf. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n180" creationdate="20220814T204937Z">
+				<seg>Non si poteva mettere in dubbio l'onorabilità di un passante, qualsiasi. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n180" creationdate="20220814T204937Z">
+				<seg>Nije se smelo posumnjati u poštenje kakvog prolaznika. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n182" creationdate="20220814T204937Z">
+				<seg>In una sala della Banca, dove egli si trovava un giorno, ebbe la curiosità di esaminare una verga d'oro del peso di sette od otto libbre che stava esposta sul tavolo del cassiere. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n182" creationdate="20220814T204937Z">
+				<seg>u jednoj bančinoj dvorani u kojoj je on jednoga dana bio, htede iz radoznalosti da pogleda izbliza jednu polugu zlata tešku sedam do osam livara izloženu na blagajnikovom stolu, </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n183" creationdate="20220814T204937Z">
+				<seg>Prese quella verga, la esaminò, la porse al suo vicino, questi ad un altro;  di modo che la verga, passando di mano in mano, se ne andò sino in fondo al corridoio oscuro;  e non ritornò al proprio posto se non mezz'ora dopo, senza che il cassiere avesse nemmeno alzato la testa.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n183" creationdate="20220814T204937Z">
+				<seg>uze tu polugu, pregleda je, doda je svom susedu, ovaj opet drugome, tako da je poluga išla od ruke do ruke do nakraj mračnog hodnika, a da blagajnik ni glave nije podigao. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n200" creationdate="20220814T204937Z">
+				<seg>Io ritengo - diceva Andrew Stuart, - che le probabilità sono in favore del ladro, il quale dev'essere certamente un uomo abilissimo.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n200" creationdate="20220814T204937Z">
+				<seg>-- Držim da je sreća naklonjena lopovu,  reče  Endrju Stjuart -- koji je svakako vešt čovek!  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n204" creationdate="20220814T204937Z">
+				<seg>- Non ne so nulla - rispose Andrew Stuart.   - Ma, alla fin fine, il mondo è grande!  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n204" creationdate="20220814T204937Z">
+				<seg>-- Šta ja znam,  odgovori Endrju Stjuart -- ali, najzad, svet je dosta velik!  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n205" creationdate="20220814T204937Z">
+				<seg>- Lo era una volta - disse a mezza voce Phileas Fogg; </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n205" creationdate="20220814T204937Z">
+				<seg>-- Bio je nekad... reče poluglasno Fileas Fog. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n206" creationdate="20220814T204937Z">
+				<seg>quindi porgendo le carte a Thomas Flanagan: - Tocca a voi alzare.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n206" creationdate="20220814T204937Z">
+				<seg>Zatim doda, pružajući karte Tomasu Flenegenu, -- vi  cepate, gospodine.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n207" creationdate="20220814T204937Z">
+				<seg>La discussione venne sospesa per tutta la durata della partita. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n207" creationdate="20220814T204937Z">
+				<seg>Prepirka se utiša za vreme robera. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n210" creationdate="20220814T204937Z">
+				<seg>E' forse rimpicciolita la terra?  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n210" creationdate="20220814T204937Z">
+				<seg>Zar se kojim slučajem svet smanjio?  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n211" creationdate="20220814T204937Z">
+				<seg>- Senza dubbio - rispose Walter Ralph. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n211" creationdate="20220814T204937Z">
+				<seg>-- Bez sumnje,  odgovori Gotjer Ralf. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n212" creationdate="20220814T204937Z">
+				<seg>- Io sono del parere del signor Fogg: </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n212" creationdate="20220814T204937Z">
+				<seg>Mišljenja sam gospodina Foga. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n213" creationdate="20220814T204937Z">
+				<seg>la terra è rimpicciolita, giacché ora la si percorre dieci volte più rapidamente che non la si percorresse cento anni fa.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n213" creationdate="20220814T204937Z">
+				<seg>-- Svet se smanjio, jer se danas može obići deset puta brže nego pre sto godina.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n216" creationdate="20220814T204937Z">
+				<seg>- Tocca a voi giocare, signor Stuart - avvertì Phileas Fogg. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n216" creationdate="20220814T204937Z">
+				<seg>-- Vi igrate, gospodine Stjuarte,  reče Fileas Fog. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n217" creationdate="20220814T204937Z">
+				<seg>Ma l'incredulo Stuart non era ancora convinto, e a partita finita ripigliò:  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n217" creationdate="20220814T204937Z">
+				<seg>Međutim, nepoverljivi Stjuart nije bio ubeđen, i  posle završene partije on nastavi: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n218" creationdate="20220814T204937Z">
+				<seg>- Bisogna confessare, signor Ralph, che avete fatto una scoperta curiosa dicendo che la terra è rimpicciolita! </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n218" creationdate="20220814T204937Z">
+				<seg>-- Moram reći, gospodine Ralfe, da ste na šaljiv način utvrdili da se svet smanjio.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n219" creationdate="20220814T204937Z">
+				<seg>Così, poiché adesso se ne compie il giro in tre mesi...  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n219" creationdate="20220814T204937Z">
+				<seg>Pošto se sada može  obići za tri meseca...  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n220" creationdate="20220814T204937Z">
+				<seg>- In ottanta giorni soltanto - rettificò Phileas Fogg.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n220" creationdate="20220814T204937Z">
+				<seg>-- Za osamdeset dana samo  reče Fileas Fog. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n221" creationdate="20220814T204937Z">
+				<seg>- Esattamente, signori! - incalzò John Sullivan.   - Ottanta giorni, dacché il percorso fra Rothal e Allahabad è aperto con la Grande Ferrovia Peninsulare Indiana.  Ed ecco il calcolo stabilito dal "Morning Chronicle":  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n221" creationdate="20220814T204937Z">
+				<seg>-- Zaista, gospodo,  doda Džon Sulivan -- za  osamdeset dana, otkada je između Rotala i Alahabada  otvorena pruga "Velike indijske poluostrvske železnice";  evo proračuna Morning kronikla:  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n222" creationdate="20220814T204937Z">
+				<seg>- Già, ottanta giorni! - esclamò Andrew Stuart che nell'eccitazione tagliò per sbaglio una carta reale. - Ma senza tener conto del cattivo tempo, dei venti contrari, dei naufragi, dei deragliamenti, eccetera.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n222" creationdate="20220814T204937Z">
+				<seg>-- Da, osamdeset dana,  uzviknu Endrju Stjuart, odnevši iz nepažnje adut kartu -- ali ne računajući  rđavo vreme, protivne vetrove, brodolome, iskakanje  voza iz šina itd.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n223" creationdate="20220814T204937Z">
+				<seg>- Tutto compreso - rispose Phileas Fogg continuando a giocare, dato che ormai la discussione non rispettava più il "whist"!  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n223" creationdate="20220814T204937Z">
+				<seg>-- Sve je uračunato  odgovori Fileas Fog,  ne  prekidajući igru, jer se ovoga puta razgovor nije obazirao na vist. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n224" creationdate="20220814T204937Z">
+				<seg>- Anche se gli Indii, o Indiani che dir si voglia, portano via le rotaie, fermano i treni, saccheggiano i vagoni e pelano il cranio ai viaggiatori? </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n224" creationdate="20220814T204937Z">
+				<seg>-- Čak ako Hindusi ili Indijanci i povade šine uzviknu Endrju Stjuart -- ili ako zaustave voz, opljačkaju vagone, skalpiraju putnike!  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n225" creationdate="20220814T204937Z">
+				<seg>- Tutto compreso - ribadì Phileas Fogg, il quale scoprì le carte, avendo vinto. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n225" creationdate="20220814T204937Z">
+				<seg>-- Sve je to uračunato,  ponova odgovori Fileas  Fog i pokazujući karte doda: -- dva aduta!  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n226" creationdate="20220814T204937Z">
+				<seg>Andrew Stuart, a cui toccava il turno di fare il mazzo, raccolse le carte e disse:  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n226" creationdate="20220814T204937Z">
+				<seg>Endrju Stjuart, na koga je bio red da promeša i pokupi karte, reče: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n240" creationdate="20220814T204937Z">
+				<seg>- Che pazzia! - esclamò Andrew Stuart il quale cominciava a seccarsi dell'insistenza del suo collega.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n240" creationdate="20220814T204937Z">
+				<seg>-- To je ludost!  uzviknu Endju Stjuart, koji je  počeo da se ljuti zbog navaljivanja njegovog partnera. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n241" creationdate="20220814T204937Z">
+				<seg>- Via, è meglio giocare.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n241" creationdate="20220814T204937Z">
+				<seg>Ta ostavite! Bolje da se kartamo.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n242" creationdate="20220814T204937Z">
+				<seg>- Rimischiate, allora, - rispose Phileas Fogg, - giacché avete dato male.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n242" creationdate="20220814T204937Z">
+				<seg>-- Razdelite karte ponovo, odgovori Fileas Fog -- jer ste pogrešili.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n243" creationdate="20220814T204937Z">
+				<seg>Andrew Stuart ripigliò le carte con mano febbrile. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n243" creationdate="20220814T204937Z">
+				<seg>Endrju Stjuart uze nanovo karte rukom koja je  drhtala, </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n244" creationdate="20220814T204937Z">
+				<seg>Ma tutt'a un tratto posandole sulla tavola gridò:  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n244" creationdate="20220814T204937Z">
+				<seg>zatim ih iznenada stavi na sto i reče: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n245" creationdate="20220814T204937Z">
+				<seg>- Ebbene sì, signor Fogg;              scommetto quattromila sterline!  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n245" creationdate="20220814T204937Z">
+				<seg>-- E lepo, gospodine Fog, kladim se u četiri hiljade  livara!...  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n246" creationdate="20220814T204937Z">
+				<seg>Fallentin intervenne. - Calmatevi, signor Stuart. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n246" creationdate="20220814T204937Z">
+				<seg>-- Dragi moj Stjuarte,  reče Falentin -- umirite  se.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n270" creationdate="20220814T204937Z">
+				<seg>Perciò, - soggiunse il signor Fogg consultando un calendario tascabile, - dato che oggi è mercoledì 2 ottobre, dovrò essere di ritorno a Londra, in questo stesso salotto del Club, il sabato 21 dicembre alle 8 e 45 di sera.  In mancanza di che, le ventimila sterline depositate attualmente a mio credito presso i Fratelli Baring vi apparterranno di diritto e di fatto. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n270" creationdate="20220814T204937Z">
+				<seg>-- Dakle,  doda pregledavši svoj džepni kalendar  -- pošto je danas sreda, 2. oktobar, trebalo bi da se vratim u London, u ovaj isti salon Reform-kluba, u subotu, 21. decembra, u osam časova i četrdeset i pet minuta uveče, inače će dvadeset hiljada livara položenih sada na mom računu kod braće Beringa pripasti vama, gospodo, i stvarno i pravno.  </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n274" creationdate="20220814T204937Z">
+				<seg>Egli non aveva certo scommesso per guadagnare;  ed aveva impegnato soltanto quelle ventimila sterline - metà dei suoi capitali - poiché prevedeva che forse gli sarebbe stato necessario spendere l'altra metà a fine di condurre a buon termine quel difficile, per non dire inattuabile progetto. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n274" creationdate="20220814T204937Z">
+				<seg>Nije se, zacelo, kladio radi dobiti, a tih dvadeset hiljada livara - što je bila polovina njegove imovine - uložio je u opkladu stoga što je predviđao da će drugu polovinu morati utrošiti da bi izveo taj teški, da ne reknemo neizvodljivi zadatak. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n281" creationdate="20220814T204937Z">
+				<seg>Alle sette e 25 Phileas Fogg, dopo avere guadagnato al "whist" una ventina di ghinee, prese commiato dai colleghi e lasciò il Club della Riforma. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n281" creationdate="20220814T204937Z">
+				<seg>U sedam časova i dvadeset pet minuta, Fileas Fog, pošto je dobio dvadesetak gvineja na vistu, oprosti se  od svojih uvaženih kolega i napusti Reform-klub. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n282" creationdate="20220814T204937Z">
+				<seg>Alle sette e cinquanta apriva la porta di casa ed entrava nei suoi appartamenti. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n282" creationdate="20220814T204937Z">
+				<seg>U sedam časova i pedeset minuta otvori vrata na svojoj kući  i uđe unutra. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n283" creationdate="20220814T204937Z">
+				<seg>Passepartout,che aveva coscienziosamente mandato a memoria il programma giornaliero, fu non poco sorpreso nel vedere il signor Fogg, colpevole di inesattezza, comparire a quell'ora. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n283" creationdate="20220814T204937Z">
+				<seg>Paspartu, koji je savesno proučio svoj program, bio  je vrlo iznenađen videvši gospodina Foga kako prekršava svoju tačnost i pojavljuje se u tom neuobičajenom času. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n284" creationdate="20220814T204937Z">
+				<seg>Secondo la tabella, il padrone di Saville Row avrebbe dovuto rincasare solo a mezzanotte in punto.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n284" creationdate="20220814T204937Z">
+				<seg>Prema knjižici, stanovnik Sevil-roua imao se  vratiti kući tačno u ponoć. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n285" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg era salito direttamente nella propria camera, e dopo un istante chiamò:  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n285" creationdate="20220814T204937Z">
+				<seg>Fileas Fog se prvo pope u svoju sobu, zatim zovnu: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n334" creationdate="20220814T204937Z">
+				<seg>Aveva sotto il braccio un voluminoso "Orario Bradshaw - Guida generale delle ferrovie continentali e dei battelli a vapore",che doveva fornirgli tutte le indicazioni necessarie al suo viaggio. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n334" creationdate="20220814T204937Z">
+				<seg>U ruci je imao Bredšovog Sveopšteg vodiča za putovanje železnicom i brodovima, koji će mu pružiti sva potrebna obaveštenja za njegov put. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n335" creationdate="20220814T204937Z">
+				<seg>Prese il sacco dalle mani di Passepartout, l'aprì e vi cacciò dentro un vistoso pacco di quelle belle banconote che hanno corso in tutti i paesi del mondo.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n335" creationdate="20220814T204937Z">
+				<seg>On uzme torbu iz ruku Paspartuovih, otvori je i spusti u nju debeo svežanj onih lepih novčanica koje  važe u svim zemljama. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n347" creationdate="20220814T204937Z">
+				<seg>Il signor Fogg e il suo servo salirono in una carrozza, che si diresse di buon trotto verso la stazione di Charing-Cross che è raggiunta da una tratta della ferrovia di sud-est. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n347" creationdate="20220814T204937Z">
+				<seg>Fileas Fog i njegov sluga popeše se u jedna od njih, i ova  se brzo uputiše ka železničkoj stanici Čering-Kros od  koje polazi jedna pruga jugoistočne železnice. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n660" creationdate="20220814T204937Z">
+				<seg>Nella immaginazione già eccitata del "detective" le risposte del francese producevano naturalmente un effetto elettrizzante. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n660" creationdate="20220814T204937Z">
+				<seg>Lako se može zamisliti kakav su utisak morali ostaviti ovi odgovori na već ionako preterano razdražen duh policijskog inspektora. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n661" creationdate="20220814T204937Z">
+				<seg>Quella partenza precipitosa da Londra due giorni dopo la data del furto, quella ingente somma di banconote portata in viaggio, quella fretta di giungere in paesi lontani, quel pretesto di una scommessa eccentrica, tutto confermava e doveva confermare Fix nella certezza di non essersi sbagliato. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n661" creationdate="20220814T204937Z">
+				<seg>Onaj nagli odlazak iz  Londona odmah posle krađe, ona velika suma novaca koju je poneo sa sobom, ta žurba da stigne u daleke zemlje, taj izgovor o nekoj čudnovatoj opkladi, sve je to utvrđivalo i moralo utvrditi  Fiksa u njegovim pretpostavkama. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n662" creationdate="20220814T204937Z">
+				<seg>Egli fece ancora parlare il francese;  e venne a sapere che il signor Fogg viveva isolato a Londra, che tutti lo dicevano ricco senza peraltro conoscere la fonte delle sue ricchezze, che era un uomo impenetrabile, eccetera. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n662" creationdate="20220814T204937Z">
+				<seg>On je naveo  Francuza da još govori i saznao je da taj momak nimalo me poznaje svoga gospodara, da je ovaj živeo u  Londonu usamljeno, da su ga držali bogatim, neznajući za poreklo njegovog bogatstva, da je to zagonetan čovek itd. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n663" creationdate="20220814T204937Z">
+				<seg>Infine Fix apprese pure la notizia che il "gentleman" non sbarcava a Suez, ma andava direttamente a Bombay.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n663" creationdate="20220814T204937Z">
+				<seg>Ali, u isto vreme,  Fiks je mogao smatrati za sigurno da se  Fileas Fog neće iskrcati u  Suecu, i da odista ide u  Bombaj. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1314" creationdate="20220814T204937Z">
+				<seg>Passepartout con agilità acrobatica andò subito ad appollaiarsi fra i rami.  Rimuginava un'idea germogliatagli chi sa come nel cervello e piantatasi lì ostinatamente. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1314" creationdate="20220814T204937Z">
+				<seg>Međutim, Paspartu se popeo na prve grane jednoga drveta i  premišljao o zamisli koja mu je prvo prošla kroz mozak kao  munja, pa se najzad tamo i utvrdila. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1315" creationdate="20220814T204937Z">
+				<seg>Chi avesse potuto ascoltare l'intimo soliloquio del francese, si sarebbe stupito di pensieri come questi: "Quale pazzia ... Ma perché no, alla fin fine? </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1315" creationdate="20220814T204937Z">
+				<seg>Poćeo je da govori u sebi:" Kakva ludost! "- a posle  ponavljaše: " A zašto da ne, najzad?" </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1316" creationdate="20220814T204937Z">
+				<seg>E' una possibilità, forse la sola.  Con simili fanatici non si scherza!...".  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1316" creationdate="20220814T204937Z">
+				<seg>"To je jedina mogućnost, možda jedina, a sa ovakvim  glupacima!..." </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1317" creationdate="20220814T204937Z">
+				<seg>A poco a poco, Passepartout cominciò a lasciarsi scivolare fino ai rami più bassi che si curvavano verso il suolo.  Lì continuò le sue riflessioni, scrutando attentamente il paesaggio intorno. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1317" creationdate="20220814T204937Z">
+				<seg>Na svaki način, Paspartu svoju misao nije drukčije izgovorio,  ali se odmah, okretan kao zmija, spusti niz grane koje su se svojim  krajevima savijale prema zemlji. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1328" creationdate="20220814T204937Z">
+				<seg>E in quel chiarore apparve ben visibile il gruppo dei sacerdoti indù che trascinavano la giovane donna, ora non più inerte come il giorno innanzi. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1328" creationdate="20220814T204937Z">
+				<seg>Gospodin Fog i ser Fransis Kromerti ugledaše jasno  osvetljenu žrtvu koju su dva sveštenika vukla napolje. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1329" creationdate="20220814T204937Z">
+				<seg>Pareva che, scuotendo l'intorpidimento fatale dell'oppio,con un supremo istinto di conservazione l'infelice tentasse di sfuggire ai suoi carnefici.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1329" creationdate="20220814T204937Z">
+				<seg>Ućinilo im se čak da je nesrećnica, otimajući se od obamrlosti i pijanstva, poslednjim naporom nagona samoodržanja pokušavala  da se oslobodi svojih dželata. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1330" creationdate="20220814T204937Z">
+				<seg>Sir Francis Cromarty afferrò convulsamente la mano di Sir Phileas Fogg: e sentì che quella mano impugnava un coltello con la lama scoperta. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1330" creationdate="20220814T204937Z">
+				<seg>Srce ser Fransisa Kromertija jako zakuca i on, uhvativši grčevitim pokretom ruku Fileasa Foga, oseti da ta ruka drži otvoren nož. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1331" creationdate="20220814T204937Z">
+				<seg>La folla ondeggiò, si compose in processione e mosse dietro ai bramini i quali presero il sentiero verso il fiume. La giovane donna era ricaduta nel torpore.            </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1331" creationdate="20220814T204937Z">
+				<seg>U taj čas gomila krenu. Mlada žena je ponovo pala u  obamrlost izazvanu konopljinim dimom. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1332" creationdate="20220814T204937Z">
+				<seg>Passò, scortata dai fakiri che cantavano lente salmodie.                                           </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1332" creationdate="20220814T204937Z">
+				<seg>Išla je među fakirima  koji su je pratili uza zversku dernjavu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1333" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg e i compagni, confondendosi tra gli ultimi gruppi della folla, seguirono il tragico corteo.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1333" creationdate="20220814T204937Z">
+				<seg>Fileas Fog i njegovi saputnici izmešaše se sa poslednjim  redovima gomile i pođoše za njom. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1357" creationdate="20220814T204937Z">
+				<seg>Ma troppo tardi i sacerdoti indù si erano riavuti dal loro sacro terrore:  Kiunì, incitato dal bravo "mahut", correndo attraverso la foresta portava ormai fuori dal tiro delle palle e delle frecce la signora Auda e i suoi salvatori. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1357" creationdate="20220814T204937Z">
+				<seg>Opališe puške, ali otmičari su brzo bežali i za nekoliko časaka bili su van domašaja kuršuma i strela. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1362" creationdate="20220814T204937Z">
+				<seg>E Passepartout aveva risposto che tutto l'onore della faccenda andava al suo padrone. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1362" creationdate="20220814T204937Z">
+				<seg>Paspartu  je na to odgovorio da sva čast toga pothvata pripada njegovom  gospodaru. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1363" creationdate="20220814T204937Z">
+				<seg>Da parte sua, egli aveva avuto soltanto un'idea "stramba" e sorrideva pensando che per qualche istante lui, Passepartout, ex-ginnasta ed ex-sergente dei pompieri era stato il vedovo di una donna meravigliosa,un vecchio rajah imbalsamato!  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1363" creationdate="20220814T204937Z">
+				<seg>On je, reče, imao samo onu "smešnu" misao, i  smejao se pri pomisli da je on, Paspartu, bivši gimnastičar,  bivši vatrogasni narednik, bio nekoliko trenutaka stari balsamovani  radža i pokojnik krasne žene! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1364" creationdate="20220814T204937Z">
+				<seg>Quanto alla giovane indiana, lei non si era neppure accorta di quanto era successo. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1364" creationdate="20220814T204937Z">
+				<seg>Mlada Induskinja nije bila svesna ničega šta se s njom dešavalo. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1365" creationdate="20220814T204937Z">
+				<seg>Avviluppata nelle coperte da viaggio riposava in una delle sedie adattate al fianco dell'elefante.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1365" creationdate="20220814T204937Z">
+				<seg>Uvijena u putničku ćebad, ležala je na jednom  sedištu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1366" creationdate="20220814T204937Z">
+				<seg>Tuttavia l'elefante, guidato con molta sicurezza dal parsì, correva rapidamente nella foresta ancora immersa nell'oscurità. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1366" creationdate="20220814T204937Z">
+				<seg>Međutim, slon, koga je Pars potpuno sigurno vodio, brzo je  promicao kroz mračnu šumu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1371" creationdate="20220814T204937Z">
+				<seg>Sir Francis Cromarty, che conosceva gli effetti dell'ubriachezza prodotta dall'inalazione del fumo della canapa, non nutriva alcuna inquietudine nei suoi confronti.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1371" creationdate="20220814T204937Z">
+				<seg>Ser Fransis Kromerti poznavao je posledice opijenosti od udisanja  konopljine pare, te zbog nje nije bio nimalo zabrinut. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1372" creationdate="20220814T204937Z">
+				<seg>Se però il ristabilimento della giovane indiana non poneva degli interrogativi al buon brigadiere generale, egli si mostrava molto meno sicuro riguardo al futuro della ragazza. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1372" creationdate="20220814T204937Z">
+				<seg>Ali, ako se brigadni general nije brinuo u pogledu oporavljanja  mlade Induskinje, nije bio siguran u pogledu njene budućnosti. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1373" creationdate="20220814T204937Z">
+				<seg>Non esitò a dire a Phileas Fogg che la signora Auda, se fosse rimasta in India, sarebbe ricaduta inevitabilmente nelle mani dei suoi carnefici. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1373" creationdate="20220814T204937Z">
+				<seg>Nije se ustezao reći Fileasu Fogu da će gospođa Auda, ako ostane u Indiji, neizbežno ponovo pasti u ruke svojih dželata. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1374" creationdate="20220814T204937Z">
+				<seg>Quegli energumeni erano presenti in tutta la penisola indiana e certamente, nonostante la polizia inglese, avrebbero saputo riprendersi quella vittima, anche se si fosse rifugiata a Madras, a Bombay o a Calcutta. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1374" creationdate="20220814T204937Z">
+				<seg>Takvih zanesenjaka ima na celom poluostrvu, i sigurno bi, uprkos engleskoj policiji, ponovo oteli svoju žrtvu bilo u Madrasu, bilo u Bombaju ili u Kalkuti. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1375" creationdate="20220814T204937Z">
+				<seg>E a sostegno del suo timore, Sir Francis Cromarty citava un fatto analogo verificatosi qualche tempo prima. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1375" creationdate="20220814T204937Z">
+				<seg>I ser Fransis Kromerti navede u prilog svome mišljenju jedan isti slučaj koji se  nedavno dogodio. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1376" creationdate="20220814T204937Z">
+				<seg>Secondo lui, la giovane sarebbe stata veramente al sicuro solo dopo avere lasciato l'India. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1376" creationdate="20220814T204937Z">
+				<seg>Po njemu, mlada žena bi bila u potpunoj  sigurnosti samo ako napusti Indiju. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1377" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg rispose che avrebbe tenuto conto di queste osservazioni e che avrebbe provveduto.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1377" creationdate="20220814T204937Z">
+				<seg>Fileas Fog odgovori da će uzeti u obzir ove primedbe i da će o  tome razmisliti. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1379" creationdate="20220814T204937Z">
+				<seg>Riprendeva in quella città la via interrotta della ferrovia, mediante la quale i treni collegavano Allahabad a Calcutta con un viaggio che durava meno di un giorno e una notte. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1379" creationdate="20220814T204937Z">
+				<seg>Tu se nastavljala prekinuta železnička pruga  kojom vozovi za nepun dan i noć prelaze put od Alahabada do  Kalkute. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1380" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg avrebbe dovuto arrivare in tempo perciò a prendere il piroscafoche doveva partire solo l'indomani, 25 ottobre,a mezzogiorno, per Hong Kong.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1380" creationdate="20220814T204937Z">
+				<seg>Fileas Fog je, dakle, na vreme mogao stiči da uhvati brod koji je  polazio tek sutradan, 25. oktobra u podne, za Hong-Kong. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1382" creationdate="20220814T204937Z">
+				<seg>Passepartout venne incaricato di andarle a comprare diversi oggetti di "toilette", vestiti, scialli, pellicce eccetera, quello che avrebbe trovato. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1382" creationdate="20220814T204937Z">
+				<seg>Paspartua poslaše da kupi za nju razni toaletni  pribor, haljinu, šal, krzno i drugo što bude našao. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1383" creationdate="20220814T204937Z">
+				<seg>Il suo padrone gli accordava una fiducia completa.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1383" creationdate="20220814T204937Z">
+				<seg>Gospodar mu je dao neograničeni kredit. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1385" creationdate="20220814T204937Z">
+				<seg>Allahabad è la città di Dio, una delle più venerate dell'India, perché è edificata alla confluenza di due fiumi sacri, il Gange e la Jumna, le cui acque attirano pellegrini da tutta la penisola. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1385" creationdate="20220814T204937Z">
+				<seg>Alahabad je  božanski grad, najviše poštovan u Indiji, jer je sagrađen na  ušću dveju svetih reka, Ganga i Džamne, čije vode privlače  hodočasnike sa celog poluostrva. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1386" creationdate="20220814T204937Z">
+				<seg>E' noto d'altronde che, secondo le leggende del Ramayana, il Gange ha le sue sorgenti nel cielo, da cui, grazie a Brahma, discende sulla terra.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1386" creationdate="20220814T204937Z">
+				<seg>Uostalom, poznato je da prema  legendama Ramajana Gang izvire u nebu, odakle, zahvaljujući Brami,  silazi na zemlju. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1387" creationdate="20220814T204937Z">
+				<seg>Pur impegnato nelle sue compere, Passepartout prese ben presto visione della città, difesa in altri tempi da un magnifico forte divenuto poi prigione statale. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1387" creationdate="20220814T204937Z">
+				<seg>Dok je kupovao, Paspartu je razgledao grad koji je nekad branila  veličanstvena tvrđava, sada državna tamnica. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1388" creationdate="20220814T204937Z">
+				<seg>In quella città, un tempo piena d'industrie e di commerci, industrie e commerci sono spariti. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1388" creationdate="20220814T204937Z">
+				<seg>U tom nekad  industrijskom i trgovačkom gradu nema više ni trgovine ni  industrije. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1389" creationdate="20220814T204937Z">
+				<seg>Passepartout, che cercava invano un salone delle novità, come se fosse stato in Regent Street, a pochi passi da Farmer et Co., trovò solo presso un vecchio mercante ebreo pieno di pretese quello che gli serviva: un vestito di stoffa scozzese, un pesante mantello e una magnifica pelliccia di lontra che non esitò a pagare 75 sterline. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1389" creationdate="20220814T204937Z">
+				<seg>Paspartu je uzalud tražio kakvu pomodnu trgovinu kao  da je bio u Regentskoj ulici nedaleko od Farmera i komp.; našao  je jedino kod jednog trgovca, starog dosadnog Jevrejina, predmete koji su  mu bili potrebni: haljinu od škotske tkanine, širok kaput, krasno  krzno od vidre za koje bez ustezanja plati sedamdeset i pet  livara. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1390" creationdate="20220814T204937Z">
+				<seg>Poi, tutto trionfante, fece ritorno alla stazione.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1390" creationdate="20220814T204937Z">
+				<seg>Zatim se pobedonosno vrati na železničku stanicu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1391" creationdate="20220814T204937Z">
+				<seg>La signora Auda cominciava a tornare in sé. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1391" creationdate="20220814T204937Z">
+				<seg>Gospođa Auda poče da dolazi sebi. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1392" creationdate="20220814T204937Z">
+				<seg>Mano mano che svaniva l'effetto dello stupefacente a cui l'avevano sottoposta i sacerdoti di Pillaji, i suoi begli occhi riacquistavano tutta la loro dolcezza indiana. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1392" creationdate="20220814T204937Z">
+				<seg>Polako je prestajao  uticaj kojem su je potčinili piladžijski sveštenici i njene lepe  oči opet dobiše svu svoju indusku blagost. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1393" creationdate="20220814T204937Z">
+				<seg>Quando il re poeta Ushaf Uddaul celebra le bellezze della regina di Ahmadgnagar, si esprime in questo modo: </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1393" creationdate="20220814T204937Z">
+				<seg>Kada kralj-pesnik Usav-Udol slavi lepotu kraljice Ahmenagara,  ovako se izražava: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1394" creationdate="20220814T204937Z">
+				<seg>"La sua lucente capigliatura, regolarmente divisa in due parti, inquadra i contorni armoniosi delle due guance delicate e avoriate, brillanti di pulizia e di freschezza. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1394" creationdate="20220814T204937Z">
+				<seg>"njena sjajna kosa pravilno razdeljena na dva dela okružuje  harmonične crte njenih nežnih i belih obraza, koji sijaju sjajem i  svežinom. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1395" creationdate="20220814T204937Z">
+				<seg>Le sue sopracciglia nere come l'ebano hanno la forma e la potenza dell'arco di Kama, il dio dell'amore, e sotto le sue lunghe ciglia di seta, nella nera pupilla dei suoi grandi occhi limpidi, navigano come nei laghi sacri dell'Himalaia i riflessi più puri della luce celeste. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1395" creationdate="20220814T204937Z">
+				<seg>Njene obrve, kao od abonosa, imaju oblik i moć  kao luk Kame, boga Ijubavi, a ispod njenih dugih, svilenih trepavica, u  crnoj zenici njenih velikih, sjajnih očiju, plivaju, kao u svetim  jezerima Himalaja, najčistiji odblesci nebeske svetlosti. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1396" creationdate="20220814T204937Z">
+				<seg>Fini, eguali e bianchissimi risplendono i suoi denti tra le sorridenti labbra, come gocce di rugiada all'interno di un fiore semiaperto di melograno. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1396" creationdate="20220814T204937Z">
+				<seg>Njeni fini, jednaki i beli zubi blistaju između nasmejanih usana kao  kapljice rose u poluotvorenoj krunici narovog cveta. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1397" creationdate="20220814T204937Z">
+				<seg>Le sue minuscole orecchie dalle curve simmetriche, le sue mani vermiglie, i suoi piedini incurvati e teneri come le gemme del loto, brillano dello splendore delle più belle perle dello Sri Lanka e dei più bei diamanti di Colgond. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1397" creationdate="20220814T204937Z">
+				<seg>Njene umiljate uši simetrično zaokrugljene, njene rumene ruke, njene punačke i nežne nožice kao lotosovi pupoljci sijaju sjajem  najlepših cejlonskih bisera, najlepših golkondskih dijamanata. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1398" creationdate="20220814T204937Z">
+				<seg>La sua cintura minuscola e leggera, che una sola mano riesce a stringere, mette in risalto l'elegante curvatura dei fianchi arrotondati e la floridezza del petto sul quale la fiorente giovinezza dispiega i suoi tesori più splendenti e sotto le pieghe di seta della tunica sembra sia stata modellata in argento puro dalla mano divina di Vicvacarma, l'eterno scultore".  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1398" creationdate="20220814T204937Z">
+				<seg>Njen tanki i vitki struk, koji se jednom rukom može obuhvatiti, ističe skladne linije njenih oblih krsta i bogatstvo prsa iz kojih mladost u cvetu izlaže svoje najsavršenije blago i pod svilenim naborima svoje haljine ona izgleda kao izvajana od čistog srebra božanskom rukom Vikvakarme, besmrtnog vajara." </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1399" creationdate="20220814T204937Z">
+				<seg>Ma anche senza tutte queste amplificazioni, è sufficiente dire che la signora Auda, la vedova del rajah del Bundelkund era una splendida donna in tutta l'accezione europea di questo complimento. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1399" creationdate="20220814T204937Z">
+				<seg>Ali, bez sve te pesničke opširnosti, dovoljno je reći da  je gospođa Auda, udovica radže od Bundelkunda, bila dražesna  žena u potpuno evropskom smislu reči. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1400" creationdate="20220814T204937Z">
+				<seg>Parlava l'inglese con grande precisione e la guida non aveva affatto esagerato affermando che questa giovane parsì era stata trasformata dall'educazione ricevuta.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1400" creationdate="20220814T204937Z">
+				<seg>Govorila je sasvim  čisto engleski i vodič nije preterao kada je tvrdio da je ova mlada  Parsijanka preobražena vaspitanjem. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1410" creationdate="20220814T204937Z">
+				<seg>Ho pagato il tuo servizio, ma non la tua devozione. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1410" creationdate="20220814T204937Z">
+				<seg>Nagradio sam tvoju službu, ali ne i tvoju odanost. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1413" creationdate="20220814T204937Z">
+				<seg>Gli occhi del "mahut" brillarono.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1413" creationdate="20220814T204937Z">
+				<seg>Oći vodiča zasijaše: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1414" creationdate="20220814T204937Z">
+				<seg>- Oh, vostro onore mi regala una fortuna! - balbettò.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1414" creationdate="20220814T204937Z">
+				<seg>--  Vaša milost mi daje čitavo bogatstvo! --  uzviknu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1415" creationdate="20220814T204937Z">
+				<seg>- Accettala, "mahut"; e sarò ancora io tuo debitore.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1415" creationdate="20220814T204937Z">
+				<seg>--  Primi, vodiču, --  odgovori gospodin Fog --  a ja ti još ostajem dužnik. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1416" creationdate="20220814T204937Z">
+				<seg>- Così sì che va bene! - applaudì allora Passepartout. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1416" creationdate="20220814T204937Z">
+				<seg>--  U dobri čas! --  uzviknu Paspartu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1417" creationdate="20220814T204937Z">
+				<seg>Oh, tienilo caro: </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1417" creationdate="20220814T204937Z">
+				<seg>Uzmi ga, prijatelju. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1418" creationdate="20220814T204937Z">
+				<seg>Kiunì è un bravo e coraggioso animale!  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1418" creationdate="20220814T204937Z">
+				<seg>Kijuni je dobra i hrabra životinja. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1419" creationdate="20220814T204937Z">
+				<seg>E avvicinatosi al bestione, il francese gli porse una manciata di zollette di zucchero. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1419" creationdate="20220814T204937Z">
+				<seg>I uputivši se slonu, pruži mu nekoliko parčadi  šećera, govoreći: </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1420" creationdate="20220814T204937Z">
+				<seg>-- Tiens, Kiouni, tiens, tiens!" </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1420" creationdate="20220814T204937Z">
+				<seg>--  Evo, Kijuni, evo, evo! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1421" creationdate="20220814T204937Z">
+				<seg>L'elefante le gustò ghiottamente; poi, emessa una specie di grugnito di soddisfazione, </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1421" creationdate="20220814T204937Z">
+				<seg>Slon od zadovoljstva nešto promumla. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1422" creationdate="20220814T204937Z">
+				<seg>prese il giovane per la vita circondandolo con la proboscide e lo sollevò all'altezza della propria testa.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1422" creationdate="20220814T204937Z">
+				<seg>Zatim uhvati  Paspartua oko pojasa i obuhvativši ga surlom podigne ga u visinu svoje  glave. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1423" creationdate="20220814T204937Z">
+				<seg>Passepartout, niente affatto spaventato, fece una lunga carezza all'animale, il quale piano piano lo ripose a terra.  E qui il bravo giovanotto si accomiatò da Kiunì stringendogli la proboscide, proprio come avrebbe scambiato con un amico una vigorosa stretta di mano. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1423" creationdate="20220814T204937Z">
+				<seg>Paspartu, nimalo uplašen, pomiluje životinju koja ga  blago spusti na zemlju, i na stisak surle čestitog Kijunija  čestiti mladić odgovori snažnim stiskom ruke. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1424" creationdate="20220814T204937Z">
+				<seg>Qualche istante dopo,Phileas Fogg,Sir FrancisCromartye Passepartout, installati in un comodo scompartimento in cui la signora Auda occupava il posto migliore, correvano a tutto vapore verso Benares. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1424" creationdate="20220814T204937Z">
+				<seg>Posle nekoliko trenutaka Fileas Fog, ser Fransis Kromerti i  Paspartu, smešteni u udobnom vagonu u kojem je gospođa Auda zauzela  najbolje mesto, jurili su punom parom ka Benaresu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1425" creationdate="20220814T204937Z">
+				<seg>Ottanta miglia al massimo separano questa città da Allahabad e questa distanza venne percorsa in due ore.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1425" creationdate="20220814T204937Z">
+				<seg>Ovo je mesto od Alahabada udaljeno osamdeset milja, koje  pređoše za dva časa. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1426" creationdate="20220814T204937Z">
+				<seg>Durante questo tragitto, gli effetti dell'"hang" erano cessati. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1426" creationdate="20220814T204937Z">
+				<seg>Za to vreme mlada žena dođe potpuno k sebi, uspavljujuće  pare, "hanga" iščezoše! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1427" creationdate="20220814T204937Z">
+				<seg>La giovane  e fu enorme la sua meraviglia nel trovarsi su di un treno in corsa, coperta di vestimenti all'europea, in mezzo a viaggiatori che le erano assolutamente sconosciuti.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1427" creationdate="20220814T204937Z">
+				<seg>Kako se iznenadila što se nalazi u vozu, u tom kupeu, obučena  u evropsko odelo, među tim putnicima koji su joj bili potpuno  nepoznati! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1428" creationdate="20220814T204937Z">
+				<seg>I suoi compagni le prodigarono ancora molte premure e la rianimarono con qualche goccia di liquore. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1428" creationdate="20220814T204937Z">
+				<seg>Njeni saputnici odmah se pobrinuše za nju, te je okrepiše  sa nekoliko kapi likera, </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1429" creationdate="20220814T204937Z">
+				<seg>Quindi Sir Cromarty le raccontò l'avventura di cui essa era stata la protagonista senza saperlo. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1429" creationdate="20220814T204937Z">
+				<seg>zatim joj brigadni general ispriča šta se s  njom dogodilo. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1430" creationdate="20220814T204937Z">
+				<seg>L'ufficiale insistette sull'abnegazione di Phileas Fogg che non aveva esitato a porre in gioco la propria vita nel tentativo di salvataggio;  e concluse narrando come tutto si fosse risolto grazie all'audace stratagemma di Passepartout.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1430" creationdate="20220814T204937Z">
+				<seg>Istakao je odanost Fileasa Foga, koji se nije  ustezao da stavi život na kocku da bi je spasao, i Paspartuovu  odvažnu zamisao, zahvaljujući kojoj se pustolovina srećno  završila. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1431" creationdate="20220814T204937Z">
+				<seg>Il signor Fogg lasciava dire senza proferir parola. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1431" creationdate="20220814T204937Z">
+				<seg>Gospodin Fog ga ostavi da dovrši ne rekavši ni jednu reč, </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1432" creationdate="20220814T204937Z">
+				<seg>Il servo, con sincera modestia, si preoccupava di ripetere:  Niente, niente! </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1432" creationdate="20220814T204937Z">
+				<seg>Paspartu, sav postiđen, ponavljaše da "to nije ništa!" </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1433" creationdate="20220814T204937Z">
+				<seg>Gli splendidi occhi della signora Auda colmi di lacrime espressero più delle labbra la riconoscenza che ella provava per i suoi salvatori. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1433" creationdate="20220814T204937Z">
+				<seg>Potresena, gospođa Auda zahvali svojim spasiocima više suzama  nego rečima. Njene lepe oči bolje su joj tumačile  zahvalnost nego njene usne. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1434" creationdate="20220814T204937Z">
+				<seg>Improvvisamente, ricondotta col pensiero alla scena del "sutty", la giovane, lasciando errare lo sguardo sulla terra indiana dove tanti pericoli ancora la minacciavano, fu colta da un brivido di terrore. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1434" creationdate="20220814T204937Z">
+				<seg>Zatim se seti prizora "sutija" i,  videvši opet tu indusku zemlju, gde su na nju još vrebale tolike  opasnosti, ona zadrhta od straha. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1435" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg comprese quel che passava nella mente della signora Auda;  e al fine di rassicurarla le offrì, molto freddamente peraltro, di condurla a Hong Kong dove essa avrebbe potuto rimanere finché si fosse spenta l'eco della vicenda.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1435" creationdate="20220814T204937Z">
+				<seg>Fileas Fog razumede šta se dešava u duši gospođe Aude i da bi je umirio, ponudi joj, uostalom vrlo hladno, da je odvede u Hong-Kong, gde bi mogla ostati dok stvar ne padne u zaborav. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1436" creationdate="20220814T204937Z">
+				<seg>La signora Auda, parlando correttamente in lingua inglese, rispose che accettava con riconoscenza l'offerta. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1436" creationdate="20220814T204937Z">
+				<seg>Gospođa Auda prihvati ponudu sa zahvalnošću. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1437" creationdate="20220814T204937Z">
+				<seg>Proprio a Hong Kong viveva un parente di lei, anch'egli di razza parsì, un certo dottor Jejeeh, ricchissimo mercante di quella città, che è interamente inglese anche se è appena un puntino sulla costa cinese.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1437" creationdate="20220814T204937Z">
+				<seg>Baš  u Hong-Kongu ima jednog rođaka, Parsa kao i ona, jednog od prvih trgovaca u tom gradu, koji je, iako na kineskoj obali, sasvim engleski. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1438" creationdate="20220814T204937Z">
+				<seg>A mezzogiorno e mezzo il treno si fermava alla stazione di Benares. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1438" creationdate="20220814T204937Z">
+				<seg>U dvanaest i po časova voz se zaustavio na stanici Benares. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1439" creationdate="20220814T204937Z">
+				<seg>Le leggende bramine sostengono che questa città occupa il posto dov'era situata l'antica Casi, un tempo sospesa a mezz'aria, tra lo zenit e il nadir, come la tomba di Maometto. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1439" creationdate="20220814T204937Z">
+				<seg>Bramanske legende tvrde da taj grad zauzima područje pređašnjeg Kazija, koji je nekad visio u prostoru između zenita  i nadira, kao grob Muhamedov. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1440" creationdate="20220814T204937Z">
+				<seg>Ma in quest'epoca più realista, Benares, l'Atene dell'India come dichiarano gli orientalisti, posava prosaicamente sulla terra e Passepartout poté intravedere per un istante le sue case di mattoni e le sue capanne su palafitte, che le conferivano un aspetto assolutamente desolato, senza alcun colore locale.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1440" creationdate="20220814T204937Z">
+				<seg>Ali u ovo realističko doba,  Benares, Atina Indije, po kazivanju istočnjaka, ležao je sasvim  prozaično na zemlji, te je Paspartu mogao za trenutak videti  njegove kuće od cigala, pletene kolibe, koje su mu davale potpuno  tužan izgled bez ikakve lokalne boje. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1441" creationdate="20220814T204937Z">
+				<seg>Era qui che Sir Francis Cromarty doveva scendere, </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1441" creationdate="20220814T204937Z">
+				<seg>Ovde je ser Fransis Kromerti morao izići. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1442" creationdate="20220814T204937Z">
+				<seg>perché le truppe che andava a raggiungere erano a qualche miglio a nord della città. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1442" creationdate="20220814T204937Z">
+				<seg>Ćete kojima  se vračao logorovale su na nekoliko milja severno od grada. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1443" creationdate="20220814T204937Z">
+				<seg>Accomiatatosi dalla signora Auda, la quale gli attestò commossa la propria gratitudine,l'ufficiale onorò Passepartout d'unaddio cameratesco.  Infine salutò Phileas Fogg, augurandogli il pieno successo del suo viaggio.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1443" creationdate="20220814T204937Z">
+				<seg>Brigadni general se oprosti od Fileasa Foga, poželevši mu potpun  uspeh i izražavajući nadu da će svoj put ponoviti sa manje  nastranosti a sa više koristi. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1444" creationdate="20220814T204937Z">
+				<seg>Il "gentleman" gli rispose con una lieve stretta di mano. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1444" creationdate="20220814T204937Z">
+				<seg>Gospodin Fog stište lako ruku svom saputniku. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1445" creationdate="20220814T204937Z">
+				<seg>Les compliments de Mrs. Aouda furent plus affectueux. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1445" creationdate="20220814T204937Z">
+				<seg>Gospođa  Auda se pozdravi sa njim mnogo toplije. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1446" creationdate="20220814T204937Z">
+				<seg>Jamais elle n'oublierait ce qu'elle devait à Sir Francis Cromarty. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1446" creationdate="20220814T204937Z">
+				<seg>Nikada ona neće  zaboraviti koliko duguje ser Fransisu Kromertiju. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1447" creationdate="20220814T204937Z">
+				<seg>Quant à Passepartout, il fut honoré d'une vraie poignée de main de la part du brigadier général. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1447" creationdate="20220814T204937Z">
+				<seg>Brigadni general  steže iskreno ruku Paspartuu, </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1448" creationdate="20220814T204937Z">
+				<seg>Tout ému, il se demanda où et quand il pourrait bien se dévouer pour lui. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1448" creationdate="20220814T204937Z">
+				<seg>koji sav uzbuđen upita kad i gde bi se  mogao žrtvovati za njega. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1449" creationdate="20220814T204937Z">
+				<seg>Puis on se sépara. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1449" creationdate="20220814T204937Z">
+				<seg>Zatim se rastadoše. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1450" creationdate="20220814T204937Z">
+				<seg>Da Benares a Calcutta la linea ferrata scende lungo la stupenda valle del Gange. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1450" creationdate="20220814T204937Z">
+				<seg>Od Benaresa pruga je išla jednim delom dolinom Ganga. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1451" creationdate="20220814T204937Z">
+				<seg>Attraversoi cristalli del vagone i viaggiatori contemplavano un paesaggio singolare: rivi e stagni popolati di alligatori, villaggi disseminati nella foresta verdeggiante, </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1451" creationdate="20220814T204937Z">
+				<seg>Kroz  prozore vagona mogao se po lepom vremenu videti šaroliki predeo Behara,  bregovi pokriveni zelenilom, ječmena, kukuruzna i pšenična  polja, rečice i bare pune zelenkastih aligatora, dobro uređena  sela, još zelene šume. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1452" creationdate="20220814T204937Z">
+				<seg>torme di zebù e di elefanti che scendevano a bagnarsi nel fiume sacro;  e, dovunque, le sue acque e le sue rive pullulanti di indù, uomini, donne e fanciulli, i quali nonostante il freddo della stagione già inoltrata adempivano piamente le loro sante abluzioni.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1452" creationdate="20220814T204937Z">
+				<seg>Nekoliko slonova i zebua sa velikim grbama kupalo se u vodama svete reke, a isto tako i gomile Indusa oba pola, iako je godišnje doba već poodmaklo i vreme bilo hladno, izvršujući pobožno svoja sveta verska kupanja. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1453" creationdate="20220814T204937Z">
+				<seg>Questi fedeli, nemici accaniti del buddismo, sono fervidi seguaci della religione braminica, che s'incarna in tre persone:  Visnù, la divinità solare,Shiva, la personificazione divina delle forze naturali, e Brahma, signore supremo dei sacerdoti e dei legislatori. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1453" creationdate="20220814T204937Z">
+				<seg>Ti vernici su ogorčeni neprijatelji budizma a vatreni sledbenici bramanske vere, koja je ovaploćena u ove tri ličnosti: Višnuu, sunčanom božanstvu, Šivi, božanskom oličenju prirodnih sila, i Brami, vrhovnom gospodaru sveštenika i zakonodavaca. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1454" creationdate="20220814T204937Z">
+				<seg>Chissà con quale occhio adesso Brahma, Shiva e Visnù dovevano considerare quell'India "britannizzata", mentre qualche battello a vaporepassava sbuffando e agitava le acque sacre del Gange, spaventando i gabbiani che volavano alla sua superficie, le tartarughe che pullulavano sulle sue rive e i devoti sparsi sulle sue spiagge.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1454" creationdate="20220814T204937Z">
+				<seg>Ali kakvim očima su Brama, šiva i Višnu posmatrali tu Indiju, sada "poengleženu", kad kakav brod penušeći se zamuti osvećene vode Ganga, plašeći galebove koji su leteli po njegovoj površini, kornjače koje su kiptele na obalama i vernike rasute duž njegovih obala! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1455" creationdate="20220814T204937Z">
+				<seg>Tutto questo panorama sfilò dinanzi agli occhi come un baleno e spesso una nube di vapore bianco ne nascose i dettagli. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1455" creationdate="20220814T204937Z">
+				<seg>Cela ta panorama minu kao munja, a često joj je oblak bele pare  skrivao pojedinosti. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1456" creationdate="20220814T204937Z">
+				<seg>I viaggiatori poterono appena intravedere il forte di Chunar, venti miglia a sud-est di Benares, antica fortezza dei rajah del Behar, Ghazipur e le sue importanti fabbriche di acqua di rosa, la tomba di Lord Cornwallis edificata sulla riva sinistra del Gange, la città fortificata di Buxar, Patna, grande città e piena di commerci, in cui ha luogo il principale mercato d'oppio dell'India, Monghyr, città più che europea, inglese come Manchester o Birmingham, rinomata per le sue fonderie di ferro, le sue fabbriche di coltelli e di armi bianche, e le cui alte ciminiere oscuravano con un gran fumo nero il cielo di Brahma, un vero insulto al paese del sogno'  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1456" creationdate="20220814T204937Z">
+				<seg>Putnici jedva videše Šunar,  negdašnju tvrđavu radže od Behara, na dvadeset milja  jugoistočno od Benaresa, Gazepur i njegove važne fabrike ružine  vodice, grob lorda Kornvalisa, koji leži na levoj obali Ganga,  utvrđenje Buksar, Patnu, veliko industrijsko i trgovačko  središte u kome je glavno tržište opijuma u Indiji, Mangir, grad  više nego evropski, engleski kao Manćester ili Birmingam, čuven  po svojim livnicama gvožđa, fabrikama raznih sečiva i hladnog  oružja, čiji visoki dimnjaci prljaju crnim dimom Bramino nebo -  pravi pištolj u zemlji snova! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1457" creationdate="20220814T204937Z">
+				<seg>Poi scese la notte e, nel bel mezzo delle urla delle tigri, degli orsi, dei lupi che fuggivano dinanzi alla locomotiva, il treno passò a tutta velocità e non si scorse più nulla delle meraviglie del Bengala, né Colgond, né Gur in rovine, né Murshidabad, che in altri tempi fu anche capitale, né Burdwan, né Hooghly, né Chandragarh, un punto francese del territorio indiano, su cui Passepartout sarebbe stato fiero di vedere sventolare la bandiera della sua patria. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1457" creationdate="20220814T204937Z">
+				<seg>Zatim nastupi noć, i usred urlikanja tigrova, medveda, vukova,  koji su bežali ispred lokomotive, voz projuri svom brzinom, i više  se ništa nije videlo od čuda Bengala, Golkonda - ni Gur u  ruševinama, ni Muršedabag, negdašnja prestonica, ni Burdven, ni  Huglu, ni Čandernagor, ta francuska naseobina u Indiji povrh koje bi  Paspartu rado ugledao lepršanje zastave svoje otadžbine! </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1458" creationdate="20220814T204937Z">
+				<seg>Alle sette del mattino, infine il treno lanciò il suo fischio sotto le tettoie della stazione di Calcutta.  </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1458" creationdate="20220814T204937Z">
+				<seg>Najzad, u sedam časova izjutra, stigli su u Kalkutu. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1459" creationdate="20220814T204937Z">
+				<seg>Il piroscafo in partenza per Hong Kong doveva levar l'ancora a mezzogiorno. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1459" creationdate="20220814T204937Z">
+				<seg>Brod za Hong-Kong polazio je tek u podne. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1460" creationdate="20220814T204937Z">
+				<seg>Phileas Fogg aveva dunque cinque ore disponibili. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1460" creationdate="20220814T204937Z">
+				<seg>Fileas Fog je dakle imao pet  časova vremena. </seg>
+			</tuv>
+		</tu>
+		<tu>
+			<prop type="Domain"/>
+			<tuv xml:lang="it" creationid="n1463" creationdate="20220814T204937Z">
+				<seg>Sfortunatamente i due giorni guadagnati nel percorso fra Londra e Bombay, erano stati perduti nell'avventurosa traversata della penisola indiana.  Ma è probabile che Phileas Fogg non li rimpiangesse. </seg>
+			</tuv>
+			<tuv xml:lang="sr" creationid="n1463" creationdate="20220814T204937Z">
+				<seg>Nažalost, dva dana koja je uštedeo  između Londona i Bombaja izgubio je znamo kako, na putu po Indijskom  poluostrvu, ali se može pretpostaviti da Fileas Fog nije za njima  žalio. </seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>
