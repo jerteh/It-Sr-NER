@@ -22,4 +22,4 @@ ru	Russian	ru_core_news_sm	NULL	NULL
 es	Spanish	es_core_news_sm	NULL	NULL
 sv	Swedish	sv_core_news_sm	NULL	NULL
 uk	Ukrainian	uk_core_news_sm	NULL	NULL
-sr  Serbian SrpCNNER  PERS,LOC,ORG,DEMO,EVENT,WORK  ROLE
+sr	Serbian	SrpCNNER	PERS,LOC,ORG,DEMO,EVENT,WORK	ROLE
