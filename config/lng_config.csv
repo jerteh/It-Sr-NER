@@ -9,7 +9,7 @@ fi	Finnish	fi_core_news_sm	NULL	NULL
 fr	French	fr_core_news_sm	NULL	NULL
 de	German	de_core_news_sm	NULL	NULL
 el	Greek	el_core_news_sm	NULL	NULL
-it	Italian	it_core_news_sm	PER,LOC,ORG,,,	MISC1
+it	Italian	it_core_news_sm	PER,LOC,ORG,,,	MISC
 ja	Japanese	ja_core_news_sm	NULL	NULL
 ko	Korean	ko_core_news_sm	NULL	NULL
 lt	Lithuanian	lt_core_news_sm	NULL	NULL
