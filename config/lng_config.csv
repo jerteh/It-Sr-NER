@@ -1,0 +1,24 @@
+lng	language	lng_model	map_ner_types	remove_types
+ca	Catalan	ca_core_news_sm	NULL	NULL
+zh	Chinese	zh_core_web_sm	NULL	NULL
+hr	Croatian	hr_core_news_sm	NULL	NULL
+da	Danish	da_core_news_sm	NULL	NULL
+nl	Dutch	nl_core_news_sm	NULL	NULL
+en	English	en_core_web_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,WORK_OF_ART	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,NORP,ORDINAL,PERCENT,PRODUCT,QUANTITY,TIME
+fi	Finnish	fi_core_news_sm	NULL	NULL
+fr	French	fr_core_news_sm	NULL	NULL
+de	German	de_core_news_sm	NULL	NULL
+el	Greek	el_core_news_sm	NULL	NULL
+it	Italian	it_core_news_sm	PER,LOC,ORG,,,	MISC
+ja	Japanese	ja_core_news_sm	NULL	NULL
+ko	Korean	ko_core_news_sm	NULL	NULL
+lt	Lithuanian	lt_core_news_sm	NULL	NULL
+mk	Macedonian	mk_core_news_sm	NULL	NULL
+nb	Norwegian Bokmål	nb_core_news_sm	NULL	NULL
+pl	Polish	pl_core_news_sm	NULL	NULL
+pt	Portuguese	pt_core_news_sm	NULL	NULL
+ro	Romanian	ro_core_news_sm	NULL	NULL
+ru	Russian	ru_core_news_sm	NULL	NULL
+es	Spanish	es_core_news_sm	NULL	NULL
+sv	Swedish	sv_core_news_sm	NULL	NULL
+uk	Ukrainian	uk_core_news_sm	NULL	NULL
