@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+        br{
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 20; /* change this to whatever height you want it */
+        }
+    </style>
+</head>
+<body>
+<form target="if" method="post" enctype = "multipart/form-data">
+    Upload a file here: <input type="file" name="file" id="fileupload" />
+    <br/>
+    Or type in/paste the text bellow:
+    <br/>
+    <textarea name="data" cols="100" rows="10"></textarea>
+    <br/>
+    Select processing Language: <select name="lng">
+        <option value="sr">Serbian</option>
+        <option value="en">English</option>
+        <option value="it">Italian</option>
+    </select>
+    <br/>
+
+    <input type = "submit" value="Process NER (monolingual)" formaction="/mono"/>
+        or
+    <input type = "submit" value="Process NER in a TMX" formaction="/tmx"/>
+</form>
+<iframe name="if" hidden></iframe>
+
+</body>
+</html>

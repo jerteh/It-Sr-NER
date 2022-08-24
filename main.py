@@ -1,5 +1,54 @@
 import pandas as pd
 import spacy
+import flask
+from flask import request, Response, render_template
+from urllib.parse import unquote
+
+
+conf = pd.read_csv("./config/lng_config.csv", delimiter='\t').set_index('lng')
+tags = ['PERS', 'LOC', 'ORG', 'DEMO', 'EVENT', 'WORK']
+nlps = {}
+
+app = flask.Flask(__name__)
+app.config["DEBUG"] = False
+
+
+def process(req):
+    query_parameters = req.form
+    lang = query_parameters.get('lng')
+    if "file" in req.files:
+        file = req.files["file"]
+        if file.filename != "":
+            data = file.read().decode("utf-8")
+            name = file.filename
+        else:
+            data = query_parameters.get('data')
+            data = unquote(data)
+            name = "results"
+    else:
+        data = query_parameters.get('data')
+        data = unquote(data)
+        name = "results"
+    return data, lang, name
+
+
+@app.route('/')
+def home():
+    return render_template('ui.html')
+
+
+@app.route('/mono', methods=['POST'])
+def mono():
+    data, lng, name = process(request)
+    return Response(monolingual_ner(data, lng), mimetype="text/plain",
+                    headers={'Content-Disposition': 'attachment;filename=' + name + '.ner'})
+
+
+@app.route('/tmx', methods=['POST'])
+def tmxd():
+    data, lng, name = process(request)
+    return Response(monolingual_ner(data, lng), mimetype="text/plain",
+                    headers={'Content-Disposition': 'attachment;filename=' + name + '.ner'})
 
 
 # In input sentence (old), replace recognised NE with tagged NE (new):
@@ -48,38 +97,19 @@ def monolingual_ner(data, lng):
     global nlps
     global conf
     if lng not in nlps:
-        mname = conf.loc[lng]['lng_model']
+        mname = conf.loc[lng, 'lng_model']
         try:
             nlps[lng] = spacy.load(mname)
         except:
-            nlps[lng] = spacy.load("models\\"+mname)
+            nlps[lng] = spacy.load("models\\" + mname)
+
     nlp = nlps[lng]
     lst_remove_tags = conf.loc[lng]['remove_types'].split(',')
     lst_tags = conf.loc[lng]['map_ner_types'].split(',')
 
-    # file_name = "It-Sr-NER/" + lng + "/" + f_name
-    # with open(file_name, 'r', encoding='utf-8') as fid:
-    #    data = fid.read()
-
-    # apply model and harmonise tagset
     text_ner = apply_NER_model_mono(data, nlp, lst_remove_tags)
     harmonized_ner_text = map_tags(text_ner, tags, lst_tags)
 
-    # write temp file - ovo može da bude i preskočeno, ali za testiranje potrebno
-    # f_tmp_name = file_name.replace(".txt", "-ner.txt")
-    # f_tmp = open(f_tmp_name, 'w', encoding='utf-8')
-    # f_tmp.write(text_ner)
-    # f_tmp.close()
+    return harmonized_ner_text
 
-    # write out file
-    # f_out_name = file_name.replace(".txt", "-6ner.xml")
-    # f_out = open(f_out_name, 'w', encoding='utf-8')
-    # f_out.write('<div>\n' + harmonized_ner_text + '\n</div>')
-    # f_out.close()
-    print(harmonized_ner_text)
-
-
-conf = pd.read_csv("./config/lng_config.csv", delimiter='\t').set_index('lng')
-tags = ['PERS', 'LOC', 'ORG', 'DEMO', 'EVENT', 'WORK']
-nlps = {}
-monolingual_ner("Zdravo, ja se zovem Miloš i dolazim iz Požarevca.", "en")
+app.run()
