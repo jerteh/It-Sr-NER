@@ -3,11 +3,15 @@ import spacy
 import flask
 from flask import request, Response, render_template
 from urllib.parse import unquote
+import pathlib
+import os
 
 
-conf = pd.read_csv("./config/lng_config.csv", delimiter='\t').set_index('lng')
+dir = str(pathlib.Path(__file__).parent.resolve())
+conf = pd.read_csv(dir + "/config/lng_config.csv", delimiter='\t').set_index('lng')
 tags = ['PERS', 'LOC', 'ORG', 'DEMO', 'EVENT', 'WORK']
 nlps = {}
+
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = False
@@ -93,16 +97,23 @@ def map_tags(marked_text, tags, lst_tags):
     return f
 
 
+def load_model(lng):
+    mname = conf.loc[lng, 'lng_model']
+    try:
+        x = spacy.load(mname).from_disk(dir + "/models/" + mname)
+    except:
+        try:
+            x = spacy.load(dir + "/models/" + mname)
+        except:
+            x = spacy.load(dir + "/models/" + mname + "/" + os.listdir(dir + "/models/" + mname)[0])
+    return x
+
+
 def monolingual_ner(data, lng):
     global nlps
     global conf
     if lng not in nlps:
-        mname = conf.loc[lng, 'lng_model']
-        try:
-            nlps[lng] = spacy.load(mname)
-        except:
-            nlps[lng] = spacy.load("models\\" + mname)
-
+        nlps[lng] = load_model(lng)
     nlp = nlps[lng]
     lst_remove_tags = conf.loc[lng]['remove_types'].split(',')
     lst_tags = conf.loc[lng]['map_ner_types'].split(',')
@@ -112,4 +123,7 @@ def monolingual_ner(data, lng):
 
     return harmonized_ner_text
 
-app.run()
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
