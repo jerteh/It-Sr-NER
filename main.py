@@ -48,8 +48,11 @@ def monolingual_ner(data, lng):
     global nlps
     global conf
     if lng not in nlps:
-        nlps[lng] = spacy.load(conf.loc[lng]['lng_model'])
-
+        mname = conf.loc[lng]['lng_model']
+        try:
+            nlps[lng] = spacy.load(mname)
+        except:
+            nlps[lng] = spacy.load("models\\"+mname)
     nlp = nlps[lng]
     lst_remove_tags = conf.loc[lng]['remove_types'].split(',')
     lst_tags = conf.loc[lng]['map_ner_types'].split(',')
@@ -79,3 +82,4 @@ def monolingual_ner(data, lng):
 conf = pd.read_csv("./config/lng_config.csv", delimiter='\t').set_index('lng')
 tags = ['PERS', 'LOC', 'ORG', 'DEMO', 'EVENT', 'WORK']
 nlps = {}
+monolingual_ner("Zdravo, ja se zovem Miloš i dolazim iz Požarevca.", "en")
