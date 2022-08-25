@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        br{
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 20; /* change this to whatever height you want it */
+        }
+    </style>
+</head>
+<body>
+<h2>API usage instructions</h2>
+
+<h4>URL:</h4>
+{{data}}mono for monolingual NER annotation
+<br/>
+OR
+<br/>
+{{data}}tmx for bilingual NER anootation of TMX files
+<br/>
+<br/>
+<h4>KEYS:</h4>
+required keys should be form-posted:
+<br/>
+lng: language code [text]
+<br/>
+AND
+<br/>
+file: file that shpuld be processed [file]
+<br/>
+OR
+<br/>
+data: string that should be processed [txt]
+<br/>
+
+</body>
+</html>

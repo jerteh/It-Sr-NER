@@ -9,25 +9,43 @@
     </style>
 </head>
 <body>
+<h1>Process a textual file or a string</h1>
 <form target="if" method="post" enctype = "multipart/form-data">
-    Upload a file here: <input type="file" name="file" id="fileupload" />
+    Upload a file here: <input type="file" name="file" />
     <br/>
     Or type in/paste the text bellow:
     <br/>
     <textarea name="data" cols="100" rows="10"></textarea>
     <br/>
     Select processing Language: <select name="lng">
-        <option value="sr">Serbian</option>
-        <option value="en">English</option>
-        <option value="it">Italian</option>
+    {% for item in data %}
+        <option value="{{item}}">{{item}}</option>
+    {% endfor %}
     </select>
     <br/>
 
     <input type = "submit" value="Process NER (monolingual)" formaction="/mono"/>
-        or
+
+</form>
+  <br/>
+<h1>Process a bilingual TMX file</h1>
+
+<form target="if" method="post" enctype = "multipart/form-data">
+    Upload a TMX file here: <input type="file" name="file" />
+    <br/>
     <input type = "submit" value="Process NER in a TMX" formaction="/tmx"/>
 </form>
-<iframe name="if" hidden></iframe>
+<br/><br/>
+<h1>Addidtional infromation</h1>
+View an example of a well-formed TMX file <a href="/example.tmx" target="_blank">here</a>
+<br/>
+View API usage instructions <a href="/4api" target="_blank">here</a>.
+<br/>
+Currently supported languages are:
+{% for item in data %}
+    {{item}}
+{% endfor %}
 
+<iframe name="if" hidden></iframe>
 </body>
 </html>
