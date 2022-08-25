@@ -9,7 +9,7 @@ hostname/mono for monolingual NER annotation
 
 OR
 
-hostname/tmx for bilingual NER anootation of TMX files
+hostname/tmx for bilingual NER annotation of TMX files
 
 ### required keys should be form-posted:
   
