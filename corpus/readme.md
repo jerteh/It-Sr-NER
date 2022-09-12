@@ -17,11 +17,12 @@ Automatic annotation of named entities is performed for six NER classes: demonym
  
  
 **Authors**: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka 
+** NER and NEL annotation**: Milica Ikonić Nešić
 
 **Publisher**: Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
 **Contact person**: Perisic Olja, olja.perisic@unito.it, Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
 **Funding**: CLARIN ERIC , Project title: *It-Sr-NER: CLARIN compatible NER and geoparsing web services for parallel texts: case study Italian and Serbian*, grantNo:  *CE-2022-2070*, funding type: *CLARIN Bridging Gaps project*.
-** NER and NEL automatic annotation: Milica Ikonić Nešić
+
 **License**: CC-BY-4.0
 
 # Annotation examples
