@@ -43,10 +43,10 @@ It-Sr-tmx-NER-NEL: TXM files with annoted named entities and Wikidata named enti
 <tu>  
    <prop type="Domain"/>  			
    <tuv xml:lang="it" creationid="n54" creationdate="20220825T211907Z">  			
-      <seg>Progettava di raggiungere <LOC>Parigi</LOC> insieme ad altri suoi compagni, mi invitò ad andare con lei in automobile.</seg>  
+      <seg>Progettava di raggiungere <LOC ref="https://www.wikidata.org/wiki/Q90" desc="capital and largest city of France">Parigi</LOC> insieme ad altri suoi compagni, mi invitò ad andare con lei in automobile.</seg>  
    </tuv>  
    <tuv xml:lang="sr" creationid="n54" creationdate="20220825T211907Z">  
-      <seg>Plan joj je bio da stigne u <LOC>Pariz</LOC> zajedno sa drugim svojim kolegama, pozvala me je da joj se pridružim, išle bismo automobilom.</seg>  
+      <seg>Plan joj je bio da stigne u <LOC ref="https://www.wikidata.org/wiki/Q90" desc="capital and largest city of France">Pariz</LOC> zajedno sa drugim svojim kolegama, pozvala me je da joj se pridružim, išle bismo automobilom.</seg>  
    </tuv>  			
 </tu>  
 ```
