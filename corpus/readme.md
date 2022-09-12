@@ -2,12 +2,18 @@
 
  It-Sr-NER-corp is the Italian/Serbian bilingual corpus with 10,000 aligned sentences compiled in the scope of the It-Sr-project from samples of several Italian novels translated to Serbian and vice versa,  with the aim of the development of the CLARIN compatible NER web service for parallel text with the case study on Italian and Serbian. The set of 10,000 natural language segments is split into 4 files: 1x1000+3x3000. 
  
+Automatic annotation of named entities is performed for six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organizations (ORG). It-Sr-NER annotation uses a powerful Convolutional Neural Network architecture within the spaCy tool, for Italien WikiNER (Joel Nothman, Nicky Ringland, Will Radford, Tara Murphy, James R Curran) and for Serbian SrpCNNER (Cvetana Krstev, Ranka Stanković, Milica Ikonić Nešić, Branislava Šandrih Todorović).
+ 
  The corpus comprises of: 
- 1) monolingual, Italian and Serbian
- - text versions, with one segment per line 
- - NER annotated text
- 2) TMX (Translation Memory eXchange) bilingual aligned segments; 
- 3) monolingual text and TMX files with automatically annotated named entities for six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organizations (ORG). It-Sr-NER annotation uses a powerful Convolutional Neural Network architecture within the spaCy tool, for Italien WikiNER (Joel Nothman, Nicky Ringland, Will Radford, Tara Murphy, James R Curran) and for Serbian SrpCNNER (Cvetana Krstev, Ranka Stanković, Milica Ikonić Nešić, Branislava Šandrih Todorović).
+ 1) monolingual, with one segment per line 
+ - It-txt: Italian text files
+ - It-txt-NER: NER annotated Italian files
+ - Sr-txt: Serbian text files
+ - Sr-txt-NER: NER annotated Serbian files
+ 2) bilingual aligned segments: 
+ - It-Sr-html: html version of aligned segments
+ - It-Sr-tmx: xml files with TMX (Translation Memory eXchange) 
+ - It-Sr-tmx-NER: TXM files with annoted named entities
  
 - Corpus name: It-Sr-NER-corp 
 - Authors: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka 
