@@ -1,6 +1,8 @@
 # It-Sr-NER
 **Project**: "It-Sr-NER: CLARIN compatible NER and geoparsing web services for parallel texts: case study Italian and Serbian" 
 
+![It-Sr-NER logo](imgs/It-Sr-NER.png "It-Sr-NER")
+
 **Call** "Bridging Gaps - A Call for Expressions of Interest to Connect CLARIN to External Language Technology Tools" 2022
 
 **Project duration**: 1.6.2022-30.9.2022.
