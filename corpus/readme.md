@@ -4,8 +4,8 @@
  
  The corpus comprises of: 
  1) monolingual, Italian and Serbian
- -- text versions, with one segment per line 
- -- NER annotated text
+ - text versions, with one segment per line 
+ - NER annotated text
  2) TMX (Translation Memory eXchange) bilingual aligned segments; 
  3) monolingual text and TMX files with automatically annotated named entities for six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organizations (ORG). It-Sr-NER annotation uses a powerful Convolutional Neural Network architecture within the spaCy tool, for Italien WikiNER (Joel Nothman, Nicky Ringland, Will Radford, Tara Murphy, James R Curran) and for Serbian SrpCNNER (Cvetana Krstev, Ranka Stanković, Milica Ikonić Nešić, Branislava Šandrih Todorović).
  
