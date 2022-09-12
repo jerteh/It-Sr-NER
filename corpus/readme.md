@@ -16,8 +16,8 @@ Automatic annotation of named entities is performed for six NER classes: demonym
  - It-Sr-tmx-NER: TXM files with annoted named entities
  
  
-**Authors**: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka 
-** NER and NEL annotation**: Milica Ikonić Nešić
+**Authors**: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka  
+**NER and NEL annotation**: Milica Ikonić Nešić
 
 **Publisher**: Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
 **Contact person**: Perisic Olja, olja.perisic@unito.it, Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
