@@ -4,7 +4,7 @@
  
 Automatic annotation of named entities is performed for six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organizations (ORG). It-Sr-NER annotation uses a powerful Convolutional Neural Network architecture within the spaCy tool, for Italien WikiNER (Joel Nothman, Nicky Ringland, Will Radford, Tara Murphy, James R Curran) and for Serbian SrpCNNER (Cvetana Krstev, Ranka Stanković, Milica Ikonić Nešić, Branislava Šandrih Todorović).
  
- The corpus comprises of: 
+ The corpus *It-Sr-NER-corp*  comprises of: 
  1) monolingual, with one segment per line 
  - It-txt: Italian text files
  - It-txt-NER: NER annotated Italian files
@@ -15,9 +15,9 @@ Automatic annotation of named entities is performed for six NER classes: demonym
  - It-Sr-tmx: xml files with TMX (Translation Memory eXchange) 
  - It-Sr-tmx-NER: TXM files with annoted named entities
  
-- Corpus name: It-Sr-NER-corp 
-- Authors: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka 
-- Publisher: Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
+ 
+*Authors*: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka 
+*Publisher*: Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
 - Contact person: Perisic Olja, olja.perisic@unito.it, Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
 - Funding: CLARIN ERIC , Project title: It-Sr-NER: CLARIN compatible NER and geoparsing web services for parallel texts: case study Italian and Serbian, grantNo:  CE-2022-2070, funding type:  CLARIN Bridging Gaps project.
 - Languages: it, sr
