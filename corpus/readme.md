@@ -26,9 +26,9 @@ Automatic annotation of named entities is performed for six NER classes: demonym
 # Annotation examples
 It-Sr-tmx-NER: TXM files with annoted named entities
 
-`  <tu>
-   <prop type="Domain"/>  			
-			<tuv xml:lang="it" creationid="n54" creationdate="20220825T211907Z">  			
+`    <tu>  
+        <prop type="Domain"/>  			
+	<tuv xml:lang="it" creationid="n54" creationdate="20220825T211907Z">  			
 				<seg>Progettava di raggiungere <LOC>Parigi</LOC> insieme ad altri suoi compagni, mi invitò ad andare con lei in automobile.</seg>  
 			</tuv>  
 			
