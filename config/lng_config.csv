@@ -6,7 +6,7 @@ da	Danish	da_core_news_sm	NULL	NULL
 nl	Dutch	nl_core_news_sm	NULL	NULL
 en	English	en_core_web_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,WORK_OF_ART	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,NORP,ORDINAL,PERCENT,PRODUCT,QUANTITY,TIME
 fi	Finnish	fi_core_news_sm	NULL	NULL
-fr	French	fr_core_news_sm	NULL	NULL
+fr	French	fr_core_news_sm	PER,LOC,ORG,,,	MISC
 de	German	de_core_news_sm	NULL	NULL
 el	Greek	el_core_news_sm	NULL	NULL
 it	Italian	it_core_news_sm	PER,LOC,ORG,,,	MISC
