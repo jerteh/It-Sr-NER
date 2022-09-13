@@ -6,46 +6,92 @@
             content: ""; /* clears default height */
             margin-top: 20; /* change this to whatever height you want it */
         }
+        div{
+            min-width: 750px;
+            height:440px;
+            width:45vw;
+            display:inline-block;
+            border: 1px solid black;
+            vertical-align: top;
+            padding: 5px 20px
+        }
+        iframe{
+            min-width: 750px;
+            width:45vw;
+            height:440px;
+            padding: 5px 20px;
+        }
     </style>
 </head>
 <body>
-<h1>Process a textual file or a string</h1>
-<form target="if" method="post" enctype = "multipart/form-data">
-    Upload a file here: <input type="file" name="file" />
+<div>
+    <h2>Process a textual file or a string</h2>
+    <form target="if" method="post" enctype = "multipart/form-data">
+        Upload a file here: <input type="file" name="file" />
+        <br/>
+        Or type in/paste the text bellow:
+        <br/>
+        <textarea name="data" cols="70" rows="10"></textarea>
+        <br/>
+        Select processing Language: <select name="lng">
+        {% for item in data %}
+            <option value="{{item}}">{{item}}</option>
+        {% endfor %}
+        </select>
+        <br/>
+        <input type="checkbox" name="with_ner" id="with_ner" checked> Named-entity Recognition
+
+        <input type="checkbox" name="with_nel" id="with_nel"> Named-entity linking
+        <br/>
+        <input type = "submit" value="Process (monolingual)" formaction="/mono"/>
+
+    </form>
+</div>
+
+<iframe name="if" src="/img"></iframe>
+
+<div>
+    <h2>Process a bilingual TMX file</h2>
+
+    <form target="if" method="post" enctype = "multipart/form-data">
+        Upload a TMX file here: <input type="file" name="file" />
+        <br/>
+        <input type="checkbox" name="with_ner" id="with_ner_tmx" checked> Named-entity Recognition
+
+        <input type="checkbox" name="with_nel" id="with_nel_tmx"> Process Named-entity linking
+        <br/>
+        <input type = "submit" value="Process a TMX" formaction="/tmx"/>
+    </form>
+
+
+    <br/><br/>
+    <h2>Addidtional infromation</h2>
+    View an example of a well-formed TMX file <a href="/example.tmx" target="_blank">here</a>
     <br/>
-    Or type in/paste the text bellow:
+    View API usage instructions <a href="/4api" target="_blank">here</a>.
     <br/>
-    <textarea name="data" cols="100" rows="10"></textarea>
-    <br/>
-    Select processing Language: <select name="lng">
+    Currently supported languages are:
     {% for item in data %}
-        <option value="{{item}}">{{item}}</option>
+        {{item}}
     {% endfor %}
-    </select>
-    <br/>
+</div>
 
-    <input type = "submit" value="Process NER (monolingual)" formaction="/mono"/>
+<div>
+<h2><a href="https://github.com/rankastankovic/It-Sr-NER">It-Sr-NER: CLARIN compatible NER and geoparsing web services for parallel texts: case study Italian and Serbian</a></h2>
+<p>
+<b>Call</b> "Bridging Gaps - A Call for Expressions of Interest to Connect CLARIN to External Language Technology Tools" 2022
+</p><p>
+<b>Project duration:</b> 1.6.2022-30.9.2022.
+</p><p>
+<b>Project leader:</b> Olja Perišić, Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
+</p><p>
+<b>Project team</b> includes also members of Jerteh - Society for Language Resources and Tools, Serbia Duško Vitas, Ranka Stanković, Milica Ikonić Nešić Contributors also: Cvetana Krstev, Saša Moderc, Mihailo Škorić.
+</p><p>
+<b>Main goal:</b> development of the CLARIN compatible NER web service for parallel text with case study on Italian and Serbian, dubbed It-Sr-NER. Service could be used for recognizing and classifying named entities in bilingual natural language texts. Input would be parallel texts expected to be TMX (Translation Memory eXchange) file, e.g. Sr-It. It-Sr-NER would recognize six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organisations (ORG). Although primarily developed for aligned, parallel texts in TMX, the use of the service for monolingual text NER annotation for available spaCy NER models will be possible. It-Sr-NER uses a powerful Convolutional Neural Network architecture within the spaCy tool.
+</p>
+</div>
 
-</form>
-  <br/>
-<h1>Process a bilingual TMX file</h1>
 
-<form target="if" method="post" enctype = "multipart/form-data">
-    Upload a TMX file here: <input type="file" name="file" />
-    <br/>
-    <input type = "submit" value="Process NER in a TMX" formaction="/tmx"/>
-</form>
-<br/><br/>
-<h1>Addidtional infromation</h1>
-View an example of a well-formed TMX file <a href="/example.tmx" target="_blank">here</a>
-<br/>
-View API usage instructions <a href="/4api" target="_blank">here</a>.
-<br/>
-Currently supported languages are:
-{% for item in data %}
-    {{item}}
-{% endfor %}
 
-<iframe name="if" hidden></iframe>
 </body>
 </html>
