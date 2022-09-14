@@ -17,8 +17,10 @@ nlps = {}
 dic_remove_tags = {}
 dic_tags = {}
 for lng in languages:
-    dic_remove_tags[lng] = conf.loc[lng]['remove_types'].split(',')
-    dic_tags[lng] = conf.loc[lng]['map_ner_types'].split(',')
+    if conf.loc[lng]['remove_types']:
+        dic_remove_tags[lng] = conf.loc[lng]['remove_types'].split(',')
+    if conf.loc[lng]['map_ner_types']:
+        dic_tags[lng] = conf.loc[lng]['map_ner_types'].split(',')
 
 
 def load_model(mname):
@@ -166,18 +168,19 @@ def apply_NER_model_mono(text, lng):
     return marked_text
 
 
-def monolingual_ner_nel(data, lng, with_ner, with_nel,):
+def monolingual_ner_nel(data, lng, with_ner=True, with_nel=False):
 
     if with_nel and with_ner:
         return apply_NER_NEL_model_mono(data, lng)
+    elif with_nel:
+        return apply_NEL_model_mono(data)
+    elif with_ner:
+        return apply_NER_model_mono(data, lng)
     else:
-        if with_ner:
-            return apply_NER_model_mono(data, lng)
-        if with_nel:
-            return apply_NEL_model_mono(data)
+        return data
 
 
-def bilingual_ner_nel(file, with_ner, with_nel):
+def bilingual_ner_nel(file, with_ner=True, with_nel=False):
     try:
         el = etree.parse(file)
         tus = el.xpath("//*[local-name()='tu']")

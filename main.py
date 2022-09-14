@@ -95,13 +95,13 @@ def api():
 def mono():
     data, lng, name, with_nel, with_ner, text = process_mono(request)
     if text:
-        template = render_template('string.html', data=monolingual_ner_nel(data, lng, with_nel))
+        template = render_template('string.html', data=monolingual_ner_nel(data, lng, with_ner, with_nel))
         response = make_response(template)
         response.headers['Content-Type'] = 'application/xml'
         return response
     else:
         return Response(monolingual_ner_nel(data, lng, with_ner, with_nel), mimetype="text/plain",
-                    headers={'Content-Disposition': 'attachment;filename=' + name + '.ner'})
+                        headers={'Content-Disposition': 'attachment;filename=' + name + '.ner'})
 
 
 @app.route('/tmx', methods=['POST'])
