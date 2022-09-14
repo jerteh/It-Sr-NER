@@ -122,6 +122,7 @@ def apply_NER_NEL_model_mono(text, lng):
                 # add two lenghts for labels and five for <></>
                 up = int(2 * len(ent.label_) + 5)
             move_p += up
+    marked_text = map_tags(marked_text, lng)
     return marked_text
 
 
