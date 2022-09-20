@@ -8,13 +8,18 @@ Automatic annotation of named entities is performed for six NER classes: demonym
  1) monolingual, with one segment per line 
  - It-txt: Italian text files
  - It-txt-NER: NER annotated Italian files
+ - It-txt-NER-NEL: NER annotated Italian files with links to Wikidata
+ - It-txt-NEL: Entity linking in Italian files using only [spaCyOpenTapioca](https://github.com/UB-Mannheim/spacyopentapioca#spacyopentapioca)
  - Sr-txt: Serbian text files
  - Sr-txt-NER: NER annotated Serbian files
+ - Sr-txt-NER-NEL: NER annotated Serbian files with links to Wikidata
+ - Sr-txt-NEL: Entity linking in Serbian files using only [spaCyOpenTapioca](https://github.com/UB-Mannheim/spacyopentapioca#spacyopentapioca)
  2) bilingual aligned segments: 
  - It-Sr-html: html version of aligned segments
  - It-Sr-tmx: xml files with TMX (Translation Memory eXchange) 
  - It-Sr-tmx-NER: TXM files with annoted named entities
- 
+ - It-Sr-tmx-NER-NEL: NER annotated TMX files with links to Wikidata
+ - It-Sr-tmx-NEL: Entity linking in TMX files using only [spaCyOpenTapioca](https://github.com/UB-Mannheim/spacyopentapioca#spacyopentapioca) 
  
 **Authors**: Perisic Olja, Vitas Duško, Krstev Cvetana, Moderc Saša, Stanković Ranka  
 **NER and NEL annotation**: Milica Ikonić Nešić, **Web service**: Mihailo Škorić
