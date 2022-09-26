@@ -16,6 +16,16 @@ tags = ['PERS', 'LOC', 'ORG', 'DEMO', 'EVENT', 'WORK']
 nlps = {}
 dic_remove_tags = {}
 dic_tags = {}
+# 300 segments for a chunk
+chunk_size = 300
+# text up to 5000 characters without chunking
+text_size_without_chunking = 5000
+# tapioca NEL
+nlp_nel = spacy.blank('en')
+# for local
+# nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
+nlp_nel.add_pipe('opentapioca')
+
 for lng in languages:
     if conf.loc[lng]['remove_types']:
         dic_remove_tags[lng] = conf.loc[lng]['remove_types'].split(',')
@@ -34,57 +44,69 @@ def load_model(mname):
     return x
 
 
+# user for NER+NEL
 def tapioca_nel(text):
-    # general nlp object for nle using opentapioca
-    nlp_nel = spacy.blank('en')
-    nlp_nel.add_pipe('opentapioca')
-    # split text into chunks with max 300 lines of text
-    chunks = text_chunks(text, 300)
     # create list of tuples with entities text and list of QID and descriptions in wikidata - new function
     # tuple: (Beograd, [Q371, 'City in Serbia'])
     text_qid_desc = []
-    for chunk in chunks:
-        text = '\n'.join(chunk)
-        #  doc object with applied nlp_nel on input text
+    if (len(text) < text_size_without_chunking):
         doc_nel = nlp_nel(text)
         for ent_nel in doc_nel.ents:
             text_qid_desc.append((ent_nel.text, list((ent_nel.kb_id_, ent_nel._.description))))
+    else:
+        # split text into chunks with max chunk_size (= 300) lines of text
+        chunks = text_chunks(text, chunk_size)
+        for chunk in chunks:
+            text_chunk = '\n'.join(chunk)
+            #  doc object with applied nlp_nel on input text
+            doc_nel = nlp_nel(text_chunk)
+            for ent_nel in doc_nel.ents:
+                text_qid_desc.append((ent_nel.text, list((ent_nel.kb_id_, ent_nel._.description))))
     # crete dictionary
-    Dict = dict(text_qid_desc)
-    return Dict
+    dict_ent = dict(text_qid_desc)
+    return dict_ent
 
 
+# optimizovati
 def apply_NEL_model_mono(text):
-    nlp = spacy.blank('en')
-    # add in pipe opentapioca
-    nlp.add_pipe('opentapioca')
     marked_text = text
-    text_ner = ''
-    chunks = text_chunks(marked_text, 300)
-    for chunk in chunks:
-        move_p = 0
-        text_chunk = '\n'.join(chunk)
-        # apply NEL model to input text
-        doc = nlp(text_chunk)
-        for ent in doc.ents:
-            # create link with QID of entity
-            QID = "https://www.wikidata.org/wiki/" + ent.kb_id_
-            # entity description
-            Desc = ent._.description
-            # start position of entity after adding labels
-            start = move_p + ent.start_char
-            # end position of entity after adding labels
-            end = move_p + ent.end_char
-            new = '<WDT ref="' + QID + '"' + ' label="' + ent.label_ + '" desc="' + str(
-                Desc) + '"' + '>' + ent.text + '</WDT>'
-            text_chunk = replace_string(text_chunk, new, start, end)
-            # add two lenghts for labels and five for <></>
-            up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label_))
-            move_p += up
-        text_ner = text_ner + text_chunk + '\n'
+
+    if (len(text)<text_size_without_chunking ):
+        text_chunk_out = apply_NEL_model_mono_onchunk(marked_text)
+        text_ner = text_chunk_out
+    else:
+        chunks = text_chunks(marked_text, chunk_size)
+        text_ner = ''
+        for chunk in chunks:
+            text_chunk = '\n'.join(chunk)
+            text_chunk_out = apply_NEL_model_mono_onchunk(text_chunk)
+            text_ner = text_ner + text_chunk_out + '\n'
     return text_ner
 
 
+def apply_NEL_model_mono_onchunk(text_chunk):
+    move_p = 0
+    # apply NEL model to input text
+    doc = nlp_nel(text_chunk)
+    for ent in doc.ents:
+        # create link with QID of entity
+        QID = "https://www.wikidata.org/wiki/" + ent.kb_id_
+        # entity description
+        Desc = ent._.description
+        # start position of entity after adding labels
+        start = move_p + ent.start_char
+        # end position of entity after adding labels
+        end = move_p + ent.end_char
+        new = '<WDT ref="' + QID + '"' + ' label="' + ent.label_ + '" desc="' + str(
+            Desc) + '"' + '>' + ent.text + '</WDT>'
+        text_chunk = replace_string(text_chunk, new, start, end)
+        # add two lenghts for labels and five for <></>
+        up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label_))
+        move_p += up
+    return text_chunk
+
+
+# optimizovati
 def apply_NER_NEL_model_mono(text, lng):
     global nlps
     if lng not in nlps:
@@ -181,26 +203,27 @@ def monolingual_ner_nel(data, lng, with_ner=True, with_nel=False):
         return data
 
 
-def bilingual_ner_nel(file, with_ner=True, with_nel=False):
-    try:
-        el = etree.parse(file)
-        tus = el.xpath("//*[local-name()='tu']")
-        for tu in tus:
-            tuvs = tu.xpath("*[local-name()='tuv']")
-            for tuv in tuvs:
-                lng = tuv.xpath("./@xml:lang", namespaces={'xml': 'http://www.w3.org/XML/1998/namespace'})[0]
-                data = tuv.getchildren()[0].text  # tuv/seg
-                # apply model
-                text_ner = monolingual_ner_nel(data, lng, with_ner, with_nel)
+def bilingual_ner_nel(data, with_ner=True, with_nel=False):
 
-                # sinhronize content of tuv/seg
-                tuv.getchildren()[0].text = text_ner
 
-        # read xml as string
-        xml_str = etree.tostring(el, encoding='unicode')
-        # replace special characters
-        xml_str = xml_str.replace("&gt;", ">").replace("&lt;", "<")
-        return xml_str
-    except:
-        return "Submited file was not properly formatted :(("
+    el = etree.fromstring(data)
+    tus = el.xpath("//*[local-name()='tu']")
+    for tu in tus:
+        tuvs = tu.xpath("*[local-name()='tuv']")
+        for tuv in tuvs:
+            lng = tuv.xpath("./@xml:lang", namespaces={'xml': 'http://www.w3.org/XML/1998/namespace'})[0]
+            data = tuv.getchildren()[0].text  # tuv/seg
+            # apply model
+            text_ner = monolingual_ner_nel(data, lng, with_ner, with_nel)
+
+            # sinhronize content of tuv/seg
+            tuv.getchildren()[0].text = text_ner
+
+    # read xml as string
+    xml_str = etree.tostring(el, encoding='unicode')
+    # replace special characters
+    xml_str = xml_str.replace("&gt;", ">").replace("&lt;", "<")
+    return xml_str
+    #except:
+     #   return "Submited file was not properly formatted :(("
 

@@ -5,12 +5,11 @@ import os
 
 from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages
 
-
 app = flask.Flask(__name__)
 app.config["DEBUG"] = False
 
 
-def process_mono(req):
+def process_req(req):
     query_parameters = req.form
     if "file" in req.files:
         text = False
@@ -31,41 +30,14 @@ def process_mono(req):
 
     lang = query_parameters.get('lng')
     w_nel = query_parameters.get('with_nel')
-    if w_nel == "on":
-        with_nel = True
-    else:
-        with_nel = False
-
     w_ner = query_parameters.get('with_ner')
-    if w_ner == "on":
-        with_ner = True
-    else:
-        with_ner = False
+    w_tmx = query_parameters.get('with_tmx')
 
-    return data, lang, name, with_nel, with_ner, text
+    with_nel = w_nel == "on"
+    tmx = w_tmx == "on"
+    with_ner = w_ner == "on"
 
-
-def process_tmx(req):
-    file = req.files["file"]
-    query_parameters = req.form
-    if file.filename != "":
-        name = file.filename
-    else:
-        name = "results"
-
-    w_nel = query_parameters.get('with_nel')
-    if w_nel == "on":
-        with_nel = True
-    else:
-        with_nel = False
-
-    w_ner = query_parameters.get('with_ner')
-    if w_ner == "on":
-        with_ner = True
-    else:
-        with_ner = False
-
-    return file, name, with_nel, with_ner
+    return data, lang, name, with_nel, with_ner, text, tmx
 
 
 @app.route('/')
@@ -91,24 +63,25 @@ def api():
     return render_template('api.html', data=request.root_url)
 
 
-@app.route('/mono', methods=['POST'])
-def mono():
-    data, lng, name, with_nel, with_ner, text = process_mono(request)
+@app.route('/api', methods=['POST'])
+def serv():
+    data, lng, name, with_nel, with_ner, text, tmx = process_req(request)
+
     if text:
         template = render_template('string.html', data=monolingual_ner_nel(data, lng, with_ner, with_nel))
         response = make_response(template)
         response.headers['Content-Type'] = 'application/xml'
         return response
     else:
-        return Response(monolingual_ner_nel(data, lng, with_ner, with_nel), mimetype="text/plain",
-                        headers={'Content-Disposition': 'attachment;filename=' + name + '.ner'})
+        if tmx:
+            resp = bilingual_ner_nel(data, with_ner, with_nel)
+        else:
+            resp = monolingual_ner_nel(data, lng, with_ner, with_nel)
 
-
-@app.route('/tmx', methods=['POST'])
-def tmxd():
-    file, name, with_nel, with_ner = process_tmx(request)
-    return Response(bilingual_ner_nel(file, with_ner, with_nel), mimetype="text/plain",
-                    headers={'Content-Disposition': 'attachment;filename=' + name + '.ner'})
+        return Response(resp, mimetype="text/plain",
+                        headers={'Content-Disposition': 'attachment;filename=' + name[0:-4]
+                                                        + ('-ner' if with_ner else '')
+                                                        + ('-nel' if with_nel else '') + name[-4:]})
 
 
 if __name__ == "__main__":

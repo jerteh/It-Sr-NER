@@ -12,15 +12,11 @@
 <h2>API usage instructions</h2>
 
 <h4>URL:</h4>
-{{data}}mono for monolingual NER annotation
-<br/>
-OR
-<br/>
-{{data}}tmx for bilingual NER annotation of TMX files
+{{data}}api
 <br/>
 <br/>
 <h4>KEYS:</h4>
-required keys should be form-posted:
+<h5>required keys for monolingual that should be form-posted:</h5>
 <br/>
 lng: language code [string]
 <br/>
@@ -40,6 +36,22 @@ OR
 <br/>
 data: string that should be processed [string]
 <br/>
-
+<br/>
+<h5>required keys for bilingual processing that should be form-posted:</h5>
+<br/>
+with_tmx: must be on ["on"]?
+<br/>
+AND
+<br/>
+with_ner: on, if text should be processed using NER ["on"]?
+<br/>
+AND
+<br/>
+with_nel: on, if text should be processed using NEL ["on"]?
+<br/>
+AND
+<br/>
+file: file that should be processed [file]
+<br/>
 </body>
 </html>
