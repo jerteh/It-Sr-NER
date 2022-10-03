@@ -311,12 +311,16 @@ def create_map(text="", lng="", doc=None, tmx=False):
     entities_df = get_entities(text, lng, doc, tmx)
     # dataframe of entities with latitude, longitude and address
     loc_dfs = create_lat_lng(entities_df)
-    entities_with_lon_lat = pd.merge(entities_df, loc_dfs, on='entity')
-    # create map for entities
-    map = folium.Map(location=[entities_with_lon_lat.lat.mean(), entities_with_lon_lat.long.mean()], zoom_start=0,
-                     control_scale=True)
-    # add marker for entities on map
-    for index, location_info in entities_with_lon_lat.iterrows():
-        folium.Marker([location_info["lat"], location_info["long"]], popup=location_info['entity']).add_to(map)
+    if loc_dfs.empty:
+        map = folium.Map(zoom_start=0,
+                         control_scale=True)
+    else:
+        entities_with_lon_lat = pd.merge(entities_df, loc_dfs, on='entity')
+        # create map for entities
+        map = folium.Map(location=[entities_with_lon_lat.lat.mean(), entities_with_lon_lat.long.mean()], zoom_start=0,
+                         control_scale=True)
+        # add marker for entities on map
+        for index, location_info in entities_with_lon_lat.iterrows():
+            folium.Marker([location_info["lat"], location_info["long"]], popup=location_info['entity']).add_to(map)
     return map._repr_html_()
 
