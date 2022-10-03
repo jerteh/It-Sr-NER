@@ -3,7 +3,7 @@ from flask import request, Response, render_template, make_response
 from urllib.parse import unquote
 import os
 
-from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages
+from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages, create_map
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = False
@@ -32,6 +32,7 @@ def process_req(req):
     w_nel = query_parameters.get('with_nel')
     w_ner = query_parameters.get('with_ner')
     w_tmx = query_parameters.get('with_tmx')
+    w_map = query_parameters.get('with_map')
 
     with_nel = w_nel == "on"
     tmx = w_tmx == "on"
@@ -61,6 +62,13 @@ def img():
 @app.route('/4api')
 def api():
     return render_template('api.html', data=request.root_url)
+
+
+@app.route('/mapi', methods=['POST'])
+def mapi():
+    data, lng, name, with_nel, with_ner, text, tmx = process_req(request)
+    map = create_map(text=data, lng=lng, tmx=tmx)
+    return Response(map)
 
 
 @app.route('/api', methods=['POST'])

@@ -5,6 +5,8 @@ from helper import text_chunks, replace_string
 from lxml import etree
 import pandas as pd
 import numpy as np
+from geopy.geocoders import Nominatim
+import folium
 
 
 dir_x = str(pathlib.Path(__file__).parent.resolve())
@@ -25,6 +27,8 @@ nlp_nel = spacy.blank('en')
 # for local
 # nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
 nlp_nel.add_pipe('opentapioca')
+# calling the Nominatim tool
+loc = Nominatim(user_agent="GetLoc")
 
 for lng in languages:
     if conf.loc[lng]['remove_types']:
@@ -71,7 +75,7 @@ def tapioca_nel(text):
 def apply_NEL_model_mono(text):
     marked_text = text
 
-    if (len(text)<text_size_without_chunking ):
+    if (len(text) < text_size_without_chunking):
         text_chunk_out = apply_NEL_model_mono_onchunk(marked_text)
         text_ner = text_chunk_out
     else:
@@ -192,7 +196,6 @@ def apply_NER_model_mono(text, lng):
 
 
 def monolingual_ner_nel(data, lng, with_ner=True, with_nel=False):
-
     if with_nel and with_ner:
         return apply_NER_NEL_model_mono(data, lng)
     elif with_nel:
@@ -204,8 +207,6 @@ def monolingual_ner_nel(data, lng, with_ner=True, with_nel=False):
 
 
 def bilingual_ner_nel(data, with_ner=True, with_nel=False):
-
-
     el = etree.fromstring(data)
     tus = el.xpath("//*[local-name()='tu']")
     for tu in tus:
@@ -224,6 +225,98 @@ def bilingual_ner_nel(data, with_ner=True, with_nel=False):
     # replace special characters
     xml_str = xml_str.replace("&gt;", ">").replace("&lt;", "<")
     return xml_str
-    #except:
-     #   return "Submited file was not properly formatted :(("
+    # except:
+    #   return "Submited file was not properly formatted :(("
+
+
+# 1.10.2022 Ranka
+# create datafrema with entities annotate with NER tags and NEL attributes
+# fuction created 27.09.2022.
+# text - content from input file
+# nlp - language object (sr, it)
+# lst_remove_tags - list of tags wich will be removed from tagset
+def df_entities_NER_NEL(text, lng, doc=None):
+    if not doc:
+        global nlps
+        if lng not in nlps:
+            mname = conf.loc[lng, 'lng_model']
+            nlps[lng] = load_model(mname)
+        nlp = nlps[lng]
+        lst_ent = []
+        lst_remove_tags = dic_remove_tags[lng]
+        # doc object with applied nlp on input text
+        doc = nlp(text)
+        # call function tapioca_nel and get dictionary
+        Dict = tapioca_nel(text)
+
+        for ent in doc.ents:
+            if ent.label_ not in lst_remove_tags:
+                if ent.text in Dict.keys() and ent.label_ == 'LOC':
+                    lst_ent.append(ent.text)
+        lst_ent = list(set(lst_ent))
+    else:
+        lst_ent = []
+        for ent in doc.ents:
+            if ent.text in doc.keys() and ent.label_ == 'LOC':
+                lst_ent.append(ent.text)
+        lst_ent = list(set(lst_ent))
+
+    return lst_ent
+
+
+def get_entities(text, lng, doc, tmx=False):
+    if tmx:
+        lst_ent = []
+        el = etree.fromstring(text)
+        tus = el.xpath("//*[local-name()='tu']")
+        for tu in tus:
+            tuvs = tu.xpath("*[local-name()='tuv']")
+            for tuv in tuvs:
+                lnx = tuv.xpath("./@xml:lang", namespaces={'xml': 'http://www.w3.org/XML/1998/namespace'})[0]
+                data = tuv.getchildren()[0].text  # tuv/seg
+                lst_ent.extend(df_entities_NER_NEL(data, lnx))
+    else:
+        lst_ent = df_entities_NER_NEL(text, lng, doc)
+
+    data = {'entity': lst_ent}
+    entities_df = pd.DataFrame(data)
+    return entities_df
+
+
+# create latitude and longitude
+# entities_df dataframe with entities
+def create_lat_lng(ent_df):
+    # ent_df = pd.DataFrame()
+    # ent_df = entities_df
+    loc_dfs = pd.DataFrame()
+    loc_not_find = []
+    for entity_unique in ent_df['entity'].unique().tolist():
+        try:
+            getLoc = loc.geocode(entity_unique)
+            # for every entity get latitude, longitude and address
+            loc_dict = {'entity': entity_unique, 'lat': getLoc.latitude, 'long': getLoc.longitude}
+            loc_df = pd.DataFrame(loc_dict, index=[0])
+            loc_dfs = pd.concat([loc_dfs, loc_df])
+        except:
+            loc_not_find.append(entity_unique)
+            pass
+    return loc_dfs
+
+
+# create map of entities extracted from input file
+# file_in_name - input file name
+# lng - language of input file
+def create_map(text="", lng="", doc=None, tmx=False):
+    # dataframe of all entities in text
+    entities_df = get_entities(text, lng, doc, tmx)
+    # dataframe of entities with latitude, longitude and address
+    loc_dfs = create_lat_lng(entities_df)
+    entities_with_lon_lat = pd.merge(entities_df, loc_dfs, on='entity')
+    # create map for entities
+    map = folium.Map(location=[entities_with_lon_lat.lat.mean(), entities_with_lon_lat.long.mean()], zoom_start=0,
+                     control_scale=True)
+    # add marker for entities on map
+    for index, location_info in entities_with_lon_lat.iterrows():
+        folium.Marker([location_info["lat"], location_info["long"]], popup=location_info['entity']).add_to(map)
+    return map._repr_html_()
 
