@@ -244,6 +244,7 @@ def df_entities_NER_NEL(text, lng, doc=None):
         nlp = nlps[lng]
         lst_ent = []
         lst_remove_tags = dic_remove_tags[lng]
+        lst_tags = dic_tags[lng]
         # doc object with applied nlp on input text
         doc = nlp(text)
         # call function tapioca_nel and get dictionary
@@ -251,7 +252,7 @@ def df_entities_NER_NEL(text, lng, doc=None):
 
         for ent in doc.ents:
             if ent.label_ not in lst_remove_tags:
-                if ent.text in Dict.keys() and ent.label_ == 'LOC':
+                if ent.text in Dict.keys() and ent.label_ in lst_tags[1]:
                     lst_ent.append(ent.text)
         lst_ent = list(set(lst_ent))
     else:
