@@ -1,31 +1,48 @@
 <html>
 <head>
     <style>
+        body{
+            margin:0px;
+            font-family: sans-serif;
+            }
         br{
             display: block; /* makes it have a width */
             content: ""; /* clears default height */
             margin-top: 12; /* change this to whatever height you want it */
         }
-        div{
+        div, iframe {
             min-width: 750px;
-            height:440px;
-            width:45vw;
-            display:inline-block;
-            border: 1px solid black;
+            height: 440px;
+            width: 45vw;
+            display: inline-block;
+            border: 7px solid #961e64;
+            border-radius: 25px;
             vertical-align: top;
-            padding: 5px 20px
-        }
-        iframe{
-            min-width: 750px;
-            width:45vw;
-            height:440px;
             padding: 5px 20px;
+            margin: 1px;
         }
-    </style>
+
+input[type=file]::file-selector-button, input[type=submit]  {
+  margin-right: 20px;
+  border: none;
+  background: #961e64;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+</style>
+
+
 </head>
 <body>
 <div>
-    <h2>Process a textual file or a string</h2>
+    <h2>Process plain text file, TMX, or a string</h2>
     <form target="if" method="post" enctype = "multipart/form-data">
         Upload a file here: <input type="file" name="file" />
         <br/>
@@ -37,14 +54,18 @@
         {% for item in data %}
             <option value="{{item}}">{{item}}</option>
         {% endfor %}
+        </select> (if file is not a TMX)
+        <br/>
+        Select parsing method:
+        <select name="feat">
+            <option value="ner"> NER </option>
+            <option value="nel"> NEL </option>
+            <option value="nernel"> NER + NEL </option>
+            <option value="geo"> Geoparsing </option>
         </select>
         <br/>
-        <input type="checkbox" name="with_ner" id="with_ner" checked> Named-entity Recognition
-        <input type="checkbox" name="with_nel" id="with_nel"> Named-entity linking
+        <input type = "submit" value="Process" formaction="/api"/>
 
-        <br/>
-        <input type = "submit" value="Process (monolingual)" formaction="/api"/>
-        <input type = "submit" value="Geoparsing" formaction="/mapi"/>
 
     </form>
 </div>
@@ -52,20 +73,23 @@
 <iframe name="if" src="/img"></iframe>
 
 <div>
-    <h2>Process a bilingual TMX file</h2>
 
-    <form target="if" method="post" enctype = "multipart/form-data">
-        Upload a TMX file here: <input type="file" name="file" />
-        <br/>
-        <input type="checkbox" name="with_ner" id="with_ner_tmx" checked> Named-entity Recognition
+<h2>About <a href="https://github.com/rankastankovic/It-Sr-NER">the project</a></h2>
+<p>
+    <b>Project name:</b> It-Sr-NER: CLARIN compatible NER and geoparsing web services for parallel texts: case study Italian and Serbian 2022
+<br/>
+<b>Call</b> "Bridging Gaps - A Call for Expressions of Interest to Connect CLARIN to External Language Technology Tools" 2022
+<br/>
+<b>Project duration:</b> 1.6.2022-30.9.2022.
+<br/>
+<b>Project leader:</b> Olja Perišić, Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
+<br/>
+<b>Project team</b> includes also members of Jerteh - Society for Language Resources and Tools, Serbia Duško Vitas, Ranka Stanković, Milica Ikonić Nešić Contributors also: Cvetana Krstev, Saša Moderc, Mihailo Škorić.
+</p>
+</div>
 
-        <input type="checkbox" name="with_nel" id="with_nel_tmx"> Process Named-entity linking
-        <input type="checkbox" name="with_tmx" id="with_tmx" checked hidden>
-        <br/>
-        <input type = "submit" value="Process a TMX" formaction="/api"/>
-        <input type = "submit" value="Geoparsing" formaction="/mapi"/>
-    </form>
 
+<div>
 
     <br/><br/>
     <h2>Additional information</h2>
@@ -77,22 +101,13 @@
     {% for item in data %}
         {{item}}
     {% endfor %}
+
+    <br/>
+<b>Project goal:</b> development of the CLARIN compatible NER web service for parallel text with case study on Italian and Serbian, dubbed It-Sr-NER. Service could be used for recognizing and classifying named entities in bilingual natural language texts. Input would be parallel texts expected to be TMX (Translation Memory eXchange) file, e.g. Sr-It. It-Sr-NER would recognize six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organisations (ORG). Although primarily developed for aligned, parallel texts in TMX, the use of the service for monolingual text NER annotation for available spaCy NER models will be possible. It-Sr-NER uses a powerful Convolutional Neural Network architecture within the spaCy tool.
+
 </div>
 
-<div>
-<h3><a href="https://github.com/rankastankovic/It-Sr-NER">It-Sr-NER: CLARIN compatible NER and geoparsing web services for parallel texts:<br/> case study Italian and Serbian</a></h3>
-<p>
-<b>Call</b> "Bridging Gaps - A Call for Expressions of Interest to Connect CLARIN to External Language Technology Tools" 2022
-<br/>
-<b>Project duration:</b> 1.6.2022-30.9.2022.
-<br/>
-<b>Project leader:</b> Olja Perišić, Università degli Studi di Torino, Dipartimento di Lingue e Letterature Straniere e Culture Moderne, Italy
-<br/>
-<b>Project team</b> includes also members of Jerteh - Society for Language Resources and Tools, Serbia Duško Vitas, Ranka Stanković, Milica Ikonić Nešić Contributors also: Cvetana Krstev, Saša Moderc, Mihailo Škorić.
-<br/>
-<b>Main goal:</b> development of the CLARIN compatible NER web service for parallel text with case study on Italian and Serbian, dubbed It-Sr-NER. Service could be used for recognizing and classifying named entities in bilingual natural language texts. Input would be parallel texts expected to be TMX (Translation Memory eXchange) file, e.g. Sr-It. It-Sr-NER would recognize six NER classes: demonyms (DEMO), works of art (WORK), person names (PERS), places (LOC), events (EVENT) and organisations (ORG). Although primarily developed for aligned, parallel texts in TMX, the use of the service for monolingual text NER annotation for available spaCy NER models will be possible. It-Sr-NER uses a powerful Convolutional Neural Network architecture within the spaCy tool.
-</p>
-</div>
+
 
 
 

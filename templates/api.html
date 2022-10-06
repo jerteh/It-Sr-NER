@@ -6,52 +6,37 @@
             content: ""; /* clears default height */
             margin-top: 20; /* change this to whatever height you want it */
         }
+        body{
+            margin-left:20px;
+            font-family: sans-serif;
+            }
     </style>
 </head>
 <body>
-<h2>API usage instructions</h2>
+<h1>API usage instructions</h1>
 
-<h4>URL:</h4>
-{{data}}api
+<h2>URL: {{data}}api</h2>
+
 <br/>
 <br/>
-<h4>KEYS:</h4>
-<h5>required keys for monolingual that should be form-posted:</h5>
+<h2>KEYS: ["file", "data", "lng", "feat"]</h2>
+<h4>What should be processed</h4>
+file: file that should be processed [file]
+<br/>
+OR
+<br/>
+data: string that should be processed [string] (can also be URL to a text file)
+<h4>How it should be processed</h4>
 <br/>
 lng: language code [string]
 <br/>
 AND
 <br/>
-with_ner: on, if text should be processed using NER ["on"]?
+feat: type of features required ["ner"|"nel"|"nernel"|"geo"]
 <br/>
-AND
-<br/>
-with_nel: on, if text should be processed using NEL ["on"]?
-<br/>
-AND
-<br/>
-file: file that should be processed [file]
-<br/>
-OR
-<br/>
-data: string that should be processed [string]
-<br/>
-<br/>
-<h5>required keys for bilingual processing that should be form-posted:</h5>
-<br/>
-with_tmx: must be on ["on"]?
-<br/>
-AND
-<br/>
-with_ner: on, if text should be processed using NER ["on"]?
-<br/>
-AND
-<br/>
-with_nel: on, if text should be processed using NEL ["on"]?
-<br/>
-AND
-<br/>
-file: file that should be processed [file]
-<br/>
+&emsp;"ner" will trigger only NER parsing of the above submitted text<br/>
+&emsp;"nel" will trigger only NEL parsing of the above submitted text<br/>
+&emsp;"nernel" will trigger both<br/>
+&emsp;"geo" will trigger both NER and NEL parsing, but will produce a Geolocation map.
 </body>
 </html>

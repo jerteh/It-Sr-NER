@@ -1,7 +1,9 @@
 import flask
 from flask import request, Response, render_template, make_response
+from urllib.request import urlopen
 from urllib.parse import unquote
 import os
+import re
 
 from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages, create_map
 
@@ -9,36 +11,42 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = False
 
 
+def isurl(string):
+    regex = re.compile(
+        r'^(?:http|ftp)s?://'  # http:// or https://
+        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'  # domain...
+        r'localhost|'  # localhost...
+        r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # ...or ip
+        r'(?::\d+)?'  # optional port
+        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+    return re.match(regex, string) is not None
+
+
+def process_text(data):
+    data = unquote(data)
+    if isurl(data):
+        data = urlopen(data).read()
+    return data, True, "results"
+
+
 def process_req(req):
     query_parameters = req.form
+    lang = query_parameters.get('lng')
+    feat = query_parameters.get('feat')
+    tmx = False
+
     if "file" in req.files:
         text = False
         file = req.files["file"]
         if file.filename != "":
             data = file.read().decode("utf-8")
             name = file.filename
-        else:
-            text = True
-            data = query_parameters.get('data')
-            data = unquote(data)
-            name = "results"
-    else:
-        text = True
-        data = query_parameters.get('data')
-        data = unquote(data)
-        name = "results"
+            if ".tmx" in name:
+                tmx = True
+            return data, lang, name, feat, text, tmx
 
-    lang = query_parameters.get('lng')
-    w_nel = query_parameters.get('with_nel')
-    w_ner = query_parameters.get('with_ner')
-    w_tmx = query_parameters.get('with_tmx')
-    w_map = query_parameters.get('with_map')
-
-    with_nel = w_nel == "on"
-    tmx = w_tmx == "on"
-    with_ner = w_ner == "on"
-
-    return data, lang, name, with_nel, with_ner, text, tmx
+    data, text, name = process_text(query_parameters.get('data'))
+    return data, lang, name, feat, text, tmx
 
 
 @app.route('/')
@@ -64,32 +72,37 @@ def api():
     return render_template('api.html', data=request.root_url)
 
 
-@app.route('/mapi', methods=['POST'])
-def mapi():
-    data, lng, name, with_nel, with_ner, text, tmx = process_req(request)
-    map = create_map(text=data, lng=lng, tmx=tmx)
-    return Response(map)
-
-
-@app.route('/api', methods=['POST'])
+@app.route('/api', methods=['POST', 'GET'])
 def serv():
-    data, lng, name, with_nel, with_ner, text, tmx = process_req(request)
+    data, lng, name, feat, text, tmx = process_req(request)
 
-    if text:
-        template = render_template('string.html', data=monolingual_ner_nel(data, lng, with_ner, with_nel))
-        response = make_response(template)
-        response.headers['Content-Type'] = 'application/xml'
-        return response
+    if feat == "geo":
+        return Response(create_map(text=data, lng=lng, tmx=tmx))
+
     else:
-        if tmx:
-            resp = bilingual_ner_nel(data, with_ner, with_nel)
-        else:
-            resp = monolingual_ner_nel(data, lng, with_ner, with_nel)
+        ner = False
+        nel = False
 
-        return Response(resp, mimetype="text/plain",
-                        headers={'Content-Disposition': 'attachment;filename=' + name[0:-4]
-                                                        + ('-ner' if with_ner else '')
-                                                        + ('-nel' if with_nel else '') + name[-4:]})
+        if "ner" in feat:
+            ner = True
+        if "nel" in feat:
+            nel = True
+
+        if text:
+            template = render_template('string.html', data=monolingual_ner_nel(data, lng, ner, nel))
+            response = make_response(template)
+            response.headers['Content-Type'] = 'application/xml'
+            return response
+        else:
+            if tmx:
+                resp = bilingual_ner_nel(data, ner, nel)
+            else:
+                resp = monolingual_ner_nel(data, lng, ner, nel)
+
+            return Response(resp, mimetype="text/plain",
+                            headers={'Content-Disposition': 'attachment;filename=' + name[0:-4]
+                                                            + ('-ner' if ner else '')
+                                                            + ('-nel' if nel else '') + name[-4:]})
 
 
 if __name__ == "__main__":
