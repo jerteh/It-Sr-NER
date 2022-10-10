@@ -44,7 +44,8 @@ def load_model(mname):
         try:
             x = spacy.load(dir_x + "/models/" + mname)
         except:
-            x = spacy.load(dir_x + "/models/" + mname + "/" + os.listdir(dir_x + "/models/" + mname)[0])
+            d = [y for y in os.listdir(dir_x + "/models/" + mname) if mname in y]
+            x = spacy.load(dir_x + "/models/" + mname + "/" + d[0])
     return x
 
 
