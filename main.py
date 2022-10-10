@@ -1,9 +1,9 @@
 import flask
 from flask import request, Response, render_template, make_response
-from urllib.request import urlopen
 from urllib.parse import unquote
 import os
 import re
+import requests
 
 from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages, create_map
 
@@ -25,12 +25,17 @@ def isurl(string):
 def process_text(data):
     data = unquote(data)
     if isurl(data):
-        data = urlopen(data).read()
+        data = requests.get(data).text
     return data, True, "results"
 
 
 def process_req(req):
-    query_parameters = req.form
+    query_parameters = req.args
+    if len(query_parameters) == 0:
+        query_parameters = req.form
+        thedata = query_parameters.get('data')
+    else:
+        thedata = query_parameters["data"]
     lang = query_parameters.get('lng')
     feat = query_parameters.get('feat')
     tmx = False
@@ -45,7 +50,7 @@ def process_req(req):
                 tmx = True
             return data, lang, name, feat, text, tmx
 
-    data, text, name = process_text(query_parameters.get('data'))
+    data, text, name = process_text(thedata)
     return data, lang, name, feat, text, tmx
 
 
