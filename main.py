@@ -46,7 +46,7 @@ def process_req(req):
         if file.filename != "":
             data = file.read().decode("utf-8")
             name = file.filename
-            if ".tmx" in name:
+            if data.startswith('<tmx'):
                 tmx = True
             return data, lang, name, feat, text, tmx
 
