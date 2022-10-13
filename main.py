@@ -51,6 +51,9 @@ def process_req(req):
             return data, lang, name, feat, text, tmx
 
     data, text, name = process_text(thedata)
+    if data.startswith('<tmx'):
+        tmx = True
+        text = False
     return data, lang, name, feat, text, tmx
 
 
@@ -104,10 +107,10 @@ def serv():
             else:
                 resp = monolingual_ner_nel(data, lng, ner, nel)
 
+            if "." in name:
+                name = name[0:-4] + ('-ner' if ner else '') + ('-nel' if nel else '') + name[-4:]
             return Response(resp, mimetype="text/plain",
-                            headers={'Content-Disposition': 'attachment;filename=' + name[0:-4]
-                                                            + ('-ner' if ner else '')
-                                                            + ('-nel' if nel else '') + name[-4:]})
+                            headers={'Content-Disposition': 'attachment;filename=' + name})
 
 
 if __name__ == "__main__":
