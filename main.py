@@ -45,6 +45,7 @@ def process_req(req):
         file = req.files["file"]
         if file.filename != "":
             data = file.read().decode("utf-8")
+            data = data.replace('\ufeff', '')
             name = file.filename
             if data.startswith('<tmx'):
                 tmx = True
