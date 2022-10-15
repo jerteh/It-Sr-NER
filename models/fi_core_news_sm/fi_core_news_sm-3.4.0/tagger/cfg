@@ -1,0 +1,23 @@
+{
+  "labels":[
+    "A",
+    "Adj",
+    "Adp",
+    "Adv",
+    "Adv_V",
+    "C",
+    "C_V",
+    "Foreign",
+    "Interj",
+    "N",
+    "Num",
+    "Pron",
+    "Punct",
+    "Symb",
+    "V",
+    "V_Pron",
+    "_SP"
+  ],
+  "neg_prefix":"!",
+  "overwrite":false
+}
