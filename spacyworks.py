@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 from geopy.geocoders import Nominatim
 import folium
+import json
 
 
 dir_x = str(pathlib.Path(__file__).parent.resolve())
@@ -29,6 +30,8 @@ nlp_nel = spacy.blank('en')
 nlp_nel.add_pipe('opentapioca')
 # calling the Nominatim tool
 loc = Nominatim(user_agent="GetLoc")
+with open(dir_x + "/geocache.json", "r", encoding="utf-8") as gc:
+    geocache = json.load(gc)
 
 for lng in languages:
     if conf.loc[lng]['remove_types']:
@@ -294,15 +297,30 @@ def create_lat_lng(ent_df):
     loc_not_find = []
     for entity_unique in ent_df['entity'].unique().tolist():
         try:
-            getLoc = loc.geocode(entity_unique)
-            # for every entity get latitude, longitude and address
-            loc_dict = {'entity': entity_unique, 'lat': getLoc.latitude, 'long': getLoc.longitude}
+            loc_dict = getLocation(entity_unique)
             loc_df = pd.DataFrame(loc_dict, index=[0])
             loc_dfs = pd.concat([loc_dfs, loc_df])
         except:
             loc_not_find.append(entity_unique)
             pass
     return loc_dfs
+
+
+def getLocation(entity_unique):
+    global geocache
+    if entity_unique not in geocache:
+        getLoc = loc.geocode(entity_unique)
+        geocache[entity_unique] = {'lat': getLoc.latitude, 'long': getLoc.longitude}
+    return {'entity': entity_unique, 'lat': geocache[entity_unique]["lat"], 'long': geocache[entity_unique]["long"]}
+
+
+def save_geocache():
+    global geocache
+    try:
+        with open("geocache.json", "w", encoding="utf-8") as gc:
+            json.dump(geocache, gc, ensure_ascii=False)
+    except:
+        pass
 
 
 # create map of entities extracted from input file
@@ -317,6 +335,7 @@ def create_map(text="", lng="", doc=None, tmx=False):
         map = folium.Map(zoom_start=0,
                          control_scale=True)
     else:
+        save_geocache()
         entities_with_lon_lat = pd.merge(entities_df, loc_dfs, on='entity')
         # create map for entities
         map = folium.Map(location=[entities_with_lon_lat.lat.mean(), entities_with_lon_lat.long.mean()], zoom_start=0,
