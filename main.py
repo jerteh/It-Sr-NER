@@ -99,7 +99,11 @@ def serv():
             nel = True
 
         if text:
-            template = render_template('string.html', data=monolingual_ner_nel(data, lng, ner, nel))
+            if tmx:
+                resp = bilingual_ner_nel(data, ner, nel)
+            else:
+                resp = monolingual_ner_nel(data, lng, ner, nel)
+            template = render_template('string.html', data=resp)
             response = make_response(template)
             response.headers['Content-Type'] = 'text/html'
             return response
