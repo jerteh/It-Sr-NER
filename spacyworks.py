@@ -8,6 +8,7 @@ import numpy as np
 from geopy.geocoders import Nominatim
 import folium
 import json
+import html
 
 
 dir_x = str(pathlib.Path(__file__).parent.resolve())
@@ -201,13 +202,14 @@ def apply_NER_model_mono(text, lng):
 
 def monolingual_ner_nel(data, lng, with_ner=True, with_nel=False):
     if with_nel and with_ner:
-        return apply_NER_NEL_model_mono(data, lng)
+        x = apply_NER_NEL_model_mono(data, lng)
     elif with_nel:
-        return apply_NEL_model_mono(data)
+        x = apply_NEL_model_mono(data)
     elif with_ner:
-        return apply_NER_model_mono(data, lng)
+        x = apply_NER_model_mono(data, lng)
     else:
-        return data
+        x = data
+    return html.unescape(x)
 
 
 def bilingual_ner_nel(data, with_ner=True, with_nel=False):

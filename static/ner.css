@@ -1,0 +1,104 @@
+[desc]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[desc]:after {
+    content: attr(desc);
+    background-color: #00FF00;
+    color: #111;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+[desc] {
+    position: relative;
+}
+
+[ref] {
+  cursor: pointer;
+  text-decoration: underline
+}
+
+body{
+    font-size: 14pt;
+
+}
+
+LOC, PERS, ORG, DEMO, WORK, EVENT, [label=LOC], [label=PERS], [label=ORG], [label=DEMO], [label=WORK], [label=EVENT], PERSON, [label=PERSON]{
+    padding:3px;
+    border-radius: 3px;
+}
+
+LOC, [label=LOC]{
+    background-color:palegreen;
+}
+
+PERS, [label=PERS], PERSON, [label=PERSON]{
+    background-color:lightcoral;
+}
+
+ORG, [label=ORG]{
+    background-color:khaki;
+}
+
+DEMO, [label=DEMO]{
+    background-color:lightblue;
+}
+
+WORK, [label=WORK]{
+    background-color:pink;
+}
+
+EVENT, [label=EVENT]{
+    background-color:floralwhite;
+}
+
+
+tu{
+width:100vw;
+display:block;
+
+
+}
+
+tu:nth-of-type(odd){
+background-color:lightgray;
+}
+
+prop{
+display:inline-block;
+width:100vw;
+}
+
+tuv{
+line-height:22pt;
+display:inline-block;
+width:45vw;
+padding:10px;
+vertical-align:top
+}
+
+tuv:before{
+    content: attr(creationid);
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+
+body:before{
+line-height: 35pt;
+    font-size: 22pt;
+    border: 2px solid;
+    padding: 5px;
+    content: "PERS | LOC | ORG | DEMO | WORK | EVENT";
+    background: linear-gradient(to right, lightcoral, lightcoral 15%, palegreen 0%, palegreen 29%, khaki 0%, khaki 43%,lightblue 0%, lightblue 62%, pink 0%, pink 81%, floralwhite 0%, floralwhite 100%);
+   }
+

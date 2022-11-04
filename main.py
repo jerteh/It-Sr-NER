@@ -4,6 +4,7 @@ from urllib.parse import unquote
 import os
 import re
 import requests
+import html
 
 from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages, create_map
 
@@ -54,7 +55,7 @@ def process_req(req):
     data, text, name = process_text(thedata)
     if data.startswith('<tmx'):
         tmx = True
-        text = False
+        # text = False
     return data, lang, name, feat, text, tmx
 
 
@@ -100,7 +101,7 @@ def serv():
         if text:
             template = render_template('string.html', data=monolingual_ner_nel(data, lng, ner, nel))
             response = make_response(template)
-            response.headers['Content-Type'] = 'application/xml'
+            response.headers['Content-Type'] = 'text/html'
             return response
         else:
             if tmx:
