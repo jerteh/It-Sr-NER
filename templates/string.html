@@ -10,11 +10,21 @@ $(document).ready(function() {
     return false;
   });
 });
+function dwn(){
+      var base64doc = btoa(unescape(encodeURIComponent(document.getElementById("response").innerHTML))),
+      a = document.createElement('a'),
+      e = new MouseEvent('click');
+
+  a.download = 'results';
+  a.href = 'data:application/xml;base64,' + base64doc;
+  a.dispatchEvent(e);
+}
     </script>
 </head>
 
 <body>
+<button onclick="dwn()" style="float:right">Download XML</button>
 <br/><br/>
-    {{data|safe}}
+<div id="response">{{data|safe}}</div>
 </body>
 </html>
