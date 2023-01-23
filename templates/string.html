@@ -5,13 +5,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
 $(document).ready(function() {
+
   $("[ref]").click(function() {
     window.open($(this).attr("ref"), '_blank').focus();
     return false;
   });
 });
 function dwn(){
-      var base64doc = btoa(unescape(encodeURIComponent(document.getElementById("response").innerHTML))),
+        var r = $('#response').html();
+
+        const array = ["loc", "pers", "org", "demo", "work", "event", "person", "wdt"]
+        array.forEach(function (item, index) {
+          r = r.replace('<' + item + '>', '<' + item.toUpperCase() + '>');
+          r = r.replace('</' + item + '>', '</' + item.toUpperCase() + '>');
+        });
+
+      var base64doc = btoa(unescape(encodeURIComponent(r))),
       a = document.createElement('a'),
       e = new MouseEvent('click');
 

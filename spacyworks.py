@@ -58,7 +58,7 @@ def tapioca_nel(text):
     # create list of tuples with entities text and list of QID and descriptions in wikidata - new function
     # tuple: (Beograd, [Q371, 'City in Serbia'])
     text_qid_desc = []
-    if (len(text) < text_size_without_chunking):
+    if len(text) < text_size_without_chunking:
         doc_nel = nlp_nel(text)
         for ent_nel in doc_nel.ents:
             text_qid_desc.append((ent_nel.text, list((ent_nel.kb_id_, ent_nel._.description))))
@@ -80,7 +80,7 @@ def tapioca_nel(text):
 def apply_NEL_model_mono(text):
     marked_text = text
 
-    if (len(text) < text_size_without_chunking):
+    if len(text) < text_size_without_chunking:
         text_chunk_out = apply_NEL_model_mono_onchunk(marked_text)
         text_ner = text_chunk_out
     else:

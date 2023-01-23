@@ -33,8 +33,13 @@ body{
 }
 
 LOC, PERS, ORG, DEMO, WORK, EVENT, [label=LOC], [label=PERS], [label=ORG], [label=DEMO], [label=WORK], [label=EVENT], PERSON, [label=PERSON]{
-    padding:3px;
-    border-radius: 3px;
+    padding:2px;
+    margin:2px;
+    border-radius: 6px;
+}
+
+wdt{
+    background-color:#979797;
 }
 
 LOC, [label=LOC]{
@@ -58,32 +63,30 @@ WORK, [label=WORK]{
 }
 
 EVENT, [label=EVENT]{
-    background-color:floralwhite;
+    background-color:#ffba73;
 }
 
 
 tu{
-width:100vw;
-display:block;
-
-
+    width:100vw;
+    display:block;
 }
 
 tu:nth-of-type(odd){
-background-color:lightgray;
+    background-color:lightgray;
 }
 
 prop{
-display:inline-block;
-width:100vw;
+    display:inline-block;
+    width:100vw;
 }
 
 tuv{
-line-height:22pt;
-display:inline-block;
-width:45vw;
-padding:10px;
-vertical-align:top
+    line-height:22pt;
+    display:inline-block;
+    width:45vw;
+    padding:10px;
+    vertical-align:top
 }
 
 tuv:before{
@@ -98,7 +101,7 @@ line-height: 35pt;
     font-size: 22pt;
     border: 2px solid;
     padding: 5px;
-    content: "PERS | LOC | ORG | DEMO | WORK | EVENT";
-    background: linear-gradient(to right, lightcoral, lightcoral 15%, palegreen 0%, palegreen 29%, khaki 0%, khaki 43%,lightblue 0%, lightblue 62%, pink 0%, pink 81%, floralwhite 0%, floralwhite 100%);
+    content: "PERS | LOC | ORG | DEMO | WORK | EVENT | OTHER";
+    background: linear-gradient(to right, lightcoral, lightcoral 12%, palegreen 0%, palegreen 24%, khaki 0%, khaki 36%,lightblue 0%, lightblue 51%, pink 0%, pink 67%, #ffba73 0%, #ffba73 84%, #979797 0%, #979797 100%);
    }
 
