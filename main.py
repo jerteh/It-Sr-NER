@@ -119,6 +119,11 @@ def serv():
                             headers={'Content-Disposition': 'attachment;filename=' + name})
 
 
+@app.errorhandler(500)
+def internal_error(error):
+    return "The service response is currently unavailable. Sorry for the inconvenience."
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
