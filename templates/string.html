@@ -16,8 +16,8 @@ function dwn(){
 
         const array = ["loc", "pers", "org", "demo", "work", "event", "person", "wdt"]
         array.forEach(function (item, index) {
-          r = r.replace('<' + item + '>', '<' + item.toUpperCase() + '>');
-          r = r.replace('</' + item + '>', '</' + item.toUpperCase() + '>');
+          r = r.replaceAll('<' + item + '>', '<' + item.toUpperCase() + '>');
+          r = r.replaceAll('</' + item + '>', '</' + item.toUpperCase() + '>');
         });
 
       var base64doc = btoa(unescape(encodeURIComponent(r))),
