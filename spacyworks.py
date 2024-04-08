@@ -25,10 +25,7 @@ chunk_size = 300
 # text up to 5000 characters without chunking
 text_size_without_chunking = 5000
 # tapioca NEL
-nlp_nel = spacy.blank('en')
-# for local
-# nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
-nlp_nel.add_pipe('opentapioca')
+
 # calling the Nominatim tool
 loc = Nominatim(user_agent="GetLoc")
 with open(dir_x + "/geocache.json", "r", encoding="utf-8") as gc:
@@ -53,15 +50,23 @@ def load_model(mname):
     return x
 
 
+nlp_nel = load_model('en_core_web_sm')
+# for local
+# nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
+nlp_nel.add_pipe("sentencizer")
+nlp_nel.add_pipe("entityLinker", last=True)
+
+
 # user for NER+NEL
-def tapioca_nel(text):
+def do_nel(text):
     # create list of tuples with entities text and list of QID and descriptions in wikidata - new function
     # tuple: (Beograd, [Q371, 'City in Serbia'])
-    text_qid_desc = []
+    entities = []
+    result = {}
     if len(text) < text_size_without_chunking:
         doc_nel = nlp_nel(text)
-        for ent_nel in doc_nel.ents:
-            text_qid_desc.append((ent_nel.text, list((ent_nel.kb_id_, ent_nel._.description))))
+        entities += doc_nel._.linkedEntities
+
     else:
         # split text into chunks with max chunk_size (= 300) lines of text
         chunks = text_chunks(text, chunk_size)
@@ -69,11 +74,9 @@ def tapioca_nel(text):
             text_chunk = '\n'.join(chunk)
             #  doc object with applied nlp_nel on input text
             doc_nel = nlp_nel(text_chunk)
-            for ent_nel in doc_nel.ents:
-                text_qid_desc.append((ent_nel.text, list((ent_nel.kb_id_, ent_nel._.description))))
-    # crete dictionary
-    dict_ent = dict(text_qid_desc)
-    return dict_ent
+            entities += doc_nel._.linkedEntities
+
+    return {x.span.text: x for x in entities}
 
 
 # optimizovati
@@ -96,21 +99,22 @@ def apply_NEL_model_mono(text):
 def apply_NEL_model_mono_onchunk(text_chunk):
     move_p = 0
     # apply NEL model to input text
-    doc = nlp_nel(text_chunk)
-    for ent in doc.ents:
+    Dict = do_nel(text_chunk)
+    for entx in Dict.keys():
+        ent = Dict.get(entx)
         # create link with QID of entity
-        QID = "https://www.wikidata.org/wiki/" + ent.kb_id_
-        # entity description
-        Desc = ent._.description
+        QID = ent.url
+        # get desccription from dictionary Dict_desc for entity
+        Desc = ent.description
         # start position of entity after adding labels
-        start = move_p + ent.start_char
+        start = move_p + ent.span.start_char
         # end position of entity after adding labels
-        end = move_p + ent.end_char
-        new = '<WDT ref="' + QID + '"' + ' label="' + ent.label_ + '" desc="' + str(
-            Desc) + '"' + '>' + ent.text + '</WDT>'
+        end = move_p + ent.span.end_char
+        new = '<WDT ref="' + QID + '"' + ' label="' + ent.label + '" desc="' + str(
+            Desc) + '"' + '>' + ent.span.text + '</WDT>'
         text_chunk = replace_string(text_chunk, new, start, end)
         # add two lenghts for labels and five for <></>
-        up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label_))
+        up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label))
         move_p += up
     return text_chunk
 
@@ -122,11 +126,13 @@ def apply_NER_NEL_model_mono(text, lng):
         mname = conf.loc[lng, 'lng_model']
         nlps[lng] = load_model(mname)
     nlp = nlps[lng]
+
     lst_remove_tags = dic_remove_tags[lng]
     # doc object with applied nlp on input text
     doc = nlp(text)
+
     # call function tapioca_nel and get dictionary
-    Dict = tapioca_nel(text)
+    Dict = do_nel(text)
     # move position
     move_p = 0
     marked_text = text
@@ -139,9 +145,9 @@ def apply_NER_NEL_model_mono(text, lng):
             # if entity text is in dictionary
             if ent.text in Dict.keys():
                 # get qid from dictionary Dict for entity
-                QID = "https://www.wikidata.org/wiki/" + Dict.get(ent.text)[0]
+                QID = Dict.get(ent.text).url
                 # get desccription from dictionary Dict_desc for entity
-                Desc = Dict.get(ent.text)[1]
+                Desc = Dict.get(ent.text).description
                 new = '<' + ent.label_ + ' ref="' + QID + '"' + ' desc="' + str(
                     Desc) + '"''>' + ent.text + '</' + ent.label_ + '>'
                 marked_text = replace_string(marked_text, new, start, end)
@@ -254,7 +260,7 @@ def df_entities_NER_NEL(text, lng, doc=None):
         # doc object with applied nlp on input text
         doc = nlp(text)
         # call function tapioca_nel and get dictionary
-        Dict = tapioca_nel(text)
+        Dict = do_nel(text)
 
         for ent in doc.ents:
             if ent.label_ not in lst_remove_tags:

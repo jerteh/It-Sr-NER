@@ -1,4 +1,5 @@
 lng	language	lng_model	map_ner_types	remove_types
+sr	Serbian	sr_ner_tesla_j125	PERS,LOC,ORG,DEMO,EVENT,WORK	ROLE
 ca	Catalan	ca_core_news_sm	PER,LOC,ORG,,,	MISC
 zh	Chinese	zh_core_web_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,ORDINAL,PERCENT,PRODUCT,QUANTITY,TIME,WORK_OF_ART
 hr	Croatian	hr_core_news_sm	PER,LOC,ORG,,,	DERIV_PER,MISC
@@ -22,4 +23,3 @@ ru	Russian	ru_core_news_sm	PER,LOC,ORG,,,	NULL
 es	Spanish	es_core_news_sm	PER,LOC,ORG,,,	MISC
 sv	Swedish	sv_core_news_sm	PRS,LOC,ORG,,EVN,WRK	MSR,OBJ,TME
 uk	Ukrainian	uk_core_news_sm	PER,LOC,ORG,,,	NULL
-sr	Serbian	SrpCNNER	PERS,LOC,ORG,DEMO,EVENT,WORK	ROLE
