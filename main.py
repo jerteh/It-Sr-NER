@@ -5,6 +5,7 @@ import os
 import re
 import requests
 import html
+from helper import translit
 
 from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages, create_map
 
@@ -27,6 +28,7 @@ def process_text(data):
     data = unquote(data)
     if isurl(data):
         data = requests.get(data).text
+    data = translit(data)
     return data, True, "results"
 
 

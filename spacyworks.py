@@ -24,8 +24,8 @@ dic_tags = {}
 chunk_size = 300
 # text up to 5000 characters without chunking
 text_size_without_chunking = 5000
-# tapioca NEL
-
+# NEL model
+nel_model = "en_core_web_sm"
 # calling the Nominatim tool
 loc = Nominatim(user_agent="GetLoc")
 with open(dir_x + "/geocache.json", "r", encoding="utf-8") as gc:
@@ -50,7 +50,7 @@ def load_model(mname):
     return x
 
 
-nlp_nel = load_model('en_core_web_sm')
+nlp_nel = load_model(nel_model)
 # for local
 # nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
 nlp_nel.add_pipe("sentencizer")
