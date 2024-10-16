@@ -107,7 +107,7 @@ def apply_NEL_model_mono_onchunk(text_chunk):
         Desc = fetch_name_and_definition_from_wikipedia(QID)
         start = move_p + ent.start_char
         end = move_p + ent.end_char
-        new = '<WDT ref="' + QID + '"' + ' label="' + ent.label_ + '" desc="' + str(
+        new = '<WDT ref="https://www.wikidata.org/wiki/{QID}"' + ' label="' + ent.label_ + '" desc="' + str(
             Desc) + '"' + '>' + ent.orth_ + '</WDT>'
         text_chunk = replace_string(text_chunk, new, start, end)
         # add two lenghts for labels and five for <></>
@@ -140,7 +140,7 @@ def apply_NER_NEL_model_mono(text, lng):
             if ent.text in Dict.keys():
                 QID = ent.kb_id_
                 Desc = fetch_name_and_definition_from_wikipedia(QID)
-                new = '<' + ent.label_ + ' ref="' + QID + '"' + ' desc="' + str(
+                new = '<' + ent.label_ + ' ref="https://www.wikidata.org/wiki/{QID}"' + ' desc="' + str(
                     Desc) + '"''>' + ent.text + '</' + ent.label_ + '>'
                 marked_text = replace_string(marked_text, new, start, end)
                 # add two lenghts for labels and five for <></>
