@@ -9,6 +9,8 @@ from geopy.geocoders import Nominatim
 import folium
 import json
 import html
+import requests
+from time import sleep
 
 
 dir_x = str(pathlib.Path(__file__).parent.resolve())
@@ -25,7 +27,7 @@ chunk_size = 300
 # text up to 5000 characters without chunking
 text_size_without_chunking = 5000
 # NEL model
-nel_model = "en_core_web_sm"
+nel_model = "sr_SRPCNNEL"
 # calling the Nominatim tool
 loc = Nominatim(user_agent="GetLoc")
 with open(dir_x + "/geocache.json", "r", encoding="utf-8") as gc:
@@ -53,8 +55,8 @@ def load_model(mname):
 nlp_nel = load_model(nel_model)
 # for local
 # nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
-nlp_nel.add_pipe("sentencizer")
-nlp_nel.add_pipe("entityLinker", last=True)
+# nlp_nel.add_pipe("sentencizer")
+# nlp_nel.add_pipe("entityLinker", last=True)
 
 
 # user for NER+NEL
@@ -65,8 +67,7 @@ def do_nel(text):
     result = {}
     if len(text) < text_size_without_chunking:
         doc_nel = nlp_nel(text)
-        entities += doc_nel._.linkedEntities
-
+        entities += [x for x in doc_nel.ents if x.kb_id_ != 'NIL']
     else:
         # split text into chunks with max chunk_size (= 300) lines of text
         chunks = text_chunks(text, chunk_size)
@@ -74,9 +75,9 @@ def do_nel(text):
             text_chunk = '\n'.join(chunk)
             #  doc object with applied nlp_nel on input text
             doc_nel = nlp_nel(text_chunk)
-            entities += doc_nel._.linkedEntities
+            entities += [x for x in doc_nel.ents if x.kb_id_ != 'NIL']
 
-    return {x.span.text: x for x in entities}
+    return {x.orth_: x for x in entities}
 
 
 # optimizovati
@@ -102,19 +103,15 @@ def apply_NEL_model_mono_onchunk(text_chunk):
     Dict = do_nel(text_chunk)
     for entx in Dict.keys():
         ent = Dict.get(entx)
-        # create link with QID of entity
-        QID = ent.url
-        # get desccription from dictionary Dict_desc for entity
-        Desc = ent.description
-        # start position of entity after adding labels
-        start = move_p + ent.span.start_char
-        # end position of entity after adding labels
-        end = move_p + ent.span.end_char
-        new = '<WDT ref="' + QID + '"' + ' label="' + ent.label + '" desc="' + str(
-            Desc) + '"' + '>' + ent.span.text + '</WDT>'
+        QID = ent.kb_id_
+        Desc = fetch_name_and_definition_from_wikipedia(QID)
+        start = move_p + ent.start_char
+        end = move_p + ent.end_char
+        new = '<WDT ref="' + QID + '"' + ' label="' + ent.label_ + '" desc="' + str(
+            Desc) + '"' + '>' + ent.orth_ + '</WDT>'
         text_chunk = replace_string(text_chunk, new, start, end)
         # add two lenghts for labels and five for <></>
-        up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label))
+        up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label_))
         move_p += up
     return text_chunk
 
@@ -138,16 +135,11 @@ def apply_NER_NEL_model_mono(text, lng):
     marked_text = text
     for ent in doc.ents:
         if ent.label_ not in lst_remove_tags:
-            # start position of entity after adding labels
             start = move_p + ent.start_char
-            # end position of entity after adding labels
             end = move_p + ent.end_char
-            # if entity text is in dictionary
             if ent.text in Dict.keys():
-                # get qid from dictionary Dict for entity
-                QID = Dict.get(ent.text).url
-                # get desccription from dictionary Dict_desc for entity
-                Desc = Dict.get(ent.text).description
+                QID = ent.kb_id_
+                Desc = fetch_name_and_definition_from_wikipedia(QID)
                 new = '<' + ent.label_ + ' ref="' + QID + '"' + ' desc="' + str(
                     Desc) + '"''>' + ent.text + '</' + ent.label_ + '>'
                 marked_text = replace_string(marked_text, new, start, end)
@@ -193,9 +185,7 @@ def apply_NER_model_mono(text, lng):
     marked_text = text
     for ent in doc.ents:
         if ent.label_ not in lst_remove_tags:
-            # start position of entity after adding labels
             start = move_p + ent.start_char
-            # end position of entity after adding labels
             end = move_p + ent.end_char
             new = '<' + ent.label_ + '>' + ent.text + '</' + ent.label_ + '>'
             marked_text = replace_string(marked_text, new, start, end)
@@ -353,3 +343,42 @@ def create_map(text="", lng="", doc=None, tmx=False):
             folium.Marker([location_info["lat"], location_info["long"]], popup=location_info['entity']).add_to(map)
     return map._repr_html_()
 
+
+
+def fetch_name_and_definition_from_wikipedia(qid, lang='en'):
+
+    title = ""
+    summary = ""
+    data = {}
+    
+    url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        data = response.json()
+
+        try:
+            summary = data['entities'][qid]['descriptions'][lang]['value']
+        except:
+            summary = ""
+            try:
+                title = data['entities'][qid]['sitelinks'].get(f'{lang}wiki', {}).get('title', '')
+            except:
+                pass
+        if summary:
+            return summary
+
+    except:
+        pass
+
+    if title:
+        summary_url = f"https://{lang}.wikipedia.org/api/rest_v1/page/summary/{title}"
+        try:
+            summary_response = requests.get(summary_url)
+            summary_response.raise_for_status()  # Raise an exception for HTTP errors
+            summary_data = summary_response.json()
+            summary = summary_data.get('extract', "")
+        except:
+            pass
+
+    return ""
