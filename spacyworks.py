@@ -10,7 +10,6 @@ import folium
 import json
 import html
 import requests
-from time import sleep
 
 
 dir_x = str(pathlib.Path(__file__).parent.resolve())
@@ -48,16 +47,14 @@ def load_model(mname):
             x = spacy.load(dir_x + "/models/" + mname)
         except:
             d = [y for y in os.listdir(dir_x + "/models/" + mname) if mname in y]
-            x = spacy.load(dir_x + "/models/" + mname + "/" + d[0])
+            try:
+                x = spacy.load(dir_x + "/models/" + mname + "/" + d[0])
+            except:
+                x = spacy.load(mname)
     return x
 
 
 nlp_nel = load_model(nel_model)
-# for local
-# nlp_nel.add_pipe('opentapioca', config={"url": OpenTapiocaAPI})
-# nlp_nel.add_pipe("sentencizer")
-# nlp_nel.add_pipe("entityLinker", last=True)
-
 
 # user for NER+NEL
 def do_nel(text):

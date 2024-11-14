@@ -4,7 +4,6 @@ from urllib.parse import unquote
 import os
 import re
 import requests
-import html
 from helper import translit
 
 from spacyworks import monolingual_ner_nel, bilingual_ner_nel, languages, create_map
