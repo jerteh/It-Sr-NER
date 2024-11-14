@@ -110,8 +110,7 @@ def apply_NEL_model_mono_onchunk(text_chunk):
         new = '<WDT ref="https://www.wikidata.org/wiki/' + QID + '"' + ' label="' + ent.label_ + '" desc="' + str(
             Desc) + '"' + '>' + ent.orth_ + '</WDT>'
         text_chunk = replace_string(text_chunk, new, start, end)
-        # add two lenghts for labels and five for <></>
-        up = int(len(QID) + len(str(Desc)) + 35 + len(ent.label_))
+        up = len(new)+start-end
         move_p += up
     return text_chunk
 
@@ -143,13 +142,10 @@ def apply_NER_NEL_model_mono(text, lng):
                 new = '<' + ent.label_ + ' ref="https://www.wikidata.org/wiki/' + QID + '"' + ' desc="' + str(
                     Desc) + '"''>' + ent.text + '</' + ent.label_ + '>'
                 marked_text = replace_string(marked_text, new, start, end)
-                # add two lenghts for labels and five for <></>
-                up = int(2 * len(ent.label_) + 5 + len(QID) + len(str(Desc)) + 15)
             else:
                 new = '<' + ent.label_ + '>' + ent.text + '</' + ent.label_ + '>'
                 marked_text = replace_string(marked_text, new, start, end)
-                # add two lenghts for labels and five for <></>
-                up = int(2 * len(ent.label_) + 5)
+            up = len(new)+start-end
             move_p += up
     marked_text = map_tags(marked_text, lng)
     return marked_text
@@ -189,8 +185,7 @@ def apply_NER_model_mono(text, lng):
             end = move_p + ent.end_char
             new = '<' + ent.label_ + '>' + ent.text + '</' + ent.label_ + '>'
             marked_text = replace_string(marked_text, new, start, end)
-            # add two lenghts for labels and five for <></>
-            up = int(2 * len(ent.label_) + 5)
+            up = len(new)+start-end
             move_p += up
     marked_text = map_tags(marked_text, lng)
     return marked_text
