@@ -15,8 +15,7 @@ import requests
 dir_x = str(pathlib.Path(__file__).parent.resolve())
 conf = pd.read_csv(dir_x + "/config/lng_config.csv", delimiter='\t').set_index('lng')
 conf = conf.replace({np.nan: None})
-languages = conf.axes[0].tolist()
-languages = [x for x in languages if conf.loc[x]['map_ner_types'] is not None]
+languages = [x for x in conf.axes[0].tolist() if x[0] != "#" and conf.loc[x]['map_ner_types'] is not None]
 tags = ['PERS', 'LOC', 'ORG', 'DEMO', 'EVENT', 'WORK']
 nlps = {}
 dic_remove_tags = {}

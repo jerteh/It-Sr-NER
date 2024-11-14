@@ -1,7 +1,7 @@
 lng	language	lng_model	map_ner_types	remove_types
 sr	Serbian	sr_ner_tesla_j125	PERS,LOC,ORG,DEMO,EVENT,WORK	ROLE
 ca	Catalan	ca_core_news_sm	PER,LOC,ORG,,,	MISC
-zh	Chinese	zh_core_web_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,ORDINAL,PERCENT,PRODUCT,QUANTITY,TIME,WORK_OF_ART
+#zh	Chinese	zh_core_web_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,ORDINAL,PERCENT,PRODUCT,QUANTITY,TIME,WORK_OF_ART
 hr	Croatian	hr_core_news_sm	PER,LOC,ORG,,,	DERIV_PER,MISC
 da	Danish	da_core_news_sm	PER,LOC,ORG,,,	MISC
 nl	Dutch	nl_core_news_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,WORK_OF_ART	CARDINAL,FAC,LANGUAGE,LAW,MONEY,ORDINAL,PERCENT,PRODUCT,QUANTITY,TIME
@@ -11,7 +11,7 @@ fr	French	fr_core_news_sm	PER,LOC,ORG,,,	MISC
 de	German	de_core_news_sm	PER,LOC,ORG,,,	MISC
 el	Greek	el_core_news_sm	PERSON,LOC+GPE,ORG,,EVENT,	PRODUCT
 it	Italian	it_core_news_sm	PER,LOC,ORG,,,	MISC
-ja	Japanese	ja_core_news_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,WORK_OF_ART	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,MOVEMENT,ORDINAL,PERCENT,PET_NAME,PHONE,PRODUCT,QUANTITY,TIME,TITLE_AFFIX
+#ja	Japanese	ja_core_news_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,WORK_OF_ART	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,MOVEMENT,ORDINAL,PERCENT,PET_NAME,PHONE,PRODUCT,QUANTITY,TIME,TITLE_AFFIX
 ko	Korean	ko_core_news_sm	PS,LC,OG,,,	DT,QT,TI
 lt	Lithuanian	lt_core_news_sm	PERSON,LOC+GPE,ORG,,,	PRODUCT,TIME
 mk	Macedonian	mk_core_news_sm	PERSON,LOC+GPE,ORG,NORP,EVENT,WORK_OF_ART	CARDINAL,DATE,FAC,LANGUAGE,LAW,MONEY,ORDINAL,PERCENT,PRODUCT, QUANTITY,TIME
@@ -19,7 +19,7 @@ nb	Norwegian Bokmål	nb_core_news_sm	PER,LOC+GPE_LOC,ORG+GPE_ORG,,EVT,	DRV,MISC,
 pl	Polish	pl_core_news_sm	persName,placeName+geogName,orgName,,,	date,time
 pt	Portuguese	pt_core_news_sm	PER,LOC,ORG,,,	MISC
 ro	Romanian	ro_core_news_sm	PERSON,LOC+GPE,ORGANIZATION,NAT_REL_POL,EVENT,WORK_OF_ART	DATETIME,FACILITY,LANGUAGE,MONEY,NUMERIC_VALUE,ORDINAL,PERIOD,PRODUCT,QUANTITY
-ru	Russian	ru_core_news_sm	PER,LOC,ORG,,,	NULL
+#ru	Russian	ru_core_news_sm	PER,LOC,ORG,,,	NULL
 es	Spanish	es_core_news_sm	PER,LOC,ORG,,,	MISC
 sv	Swedish	sv_core_news_sm	PRS,LOC,ORG,,EVN,WRK	MSR,OBJ,TME
-uk	Ukrainian	uk_core_news_sm	PER,LOC,ORG,,,	NULL
+#uk	Ukrainian	uk_core_news_sm	PER,LOC,ORG,,,	NULL
