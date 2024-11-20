@@ -133,7 +133,7 @@ def apply_NER_NEL_model_mono(text, lng):
             start = move_p + ent.start_char
             end = move_p + ent.end_char
             if ent.text in Dict.keys():
-                QID = ent.kb_id_
+                QID = Dict[ent.text].kb_id_
                 Desc = fetch_name_and_definition_from_wikipedia(QID)
                 new = '<' + ent.label_ + ' ref="https://www.wikidata.org/wiki/' + QID + '"' + ' desc="' + str(
                     Desc) + '"''>' + ent.text + '</' + ent.label_ + '>'
