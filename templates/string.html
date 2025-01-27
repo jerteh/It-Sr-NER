@@ -17,6 +17,7 @@ function dwn(){
         const array = ["loc", "pers", "org", "demo", "work", "event", "person", "wdt"]
         array.forEach(function (item, index) {
           r = r.replaceAll('<' + item + '>', '<' + item.toUpperCase() + '>');
+          r = r.replaceAll('<' + item + ' ref=', '<' + item.toUpperCase() + '>');
           r = r.replaceAll('</' + item + '>', '</' + item.toUpperCase() + '>');
         });
 
