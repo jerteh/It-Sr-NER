@@ -56,7 +56,7 @@ def load_model(mname):
 nlp_nel = load_model(nel_model)
 
 # user for NER+NEL
-def do_nel(text):
+def do_nel(text, return_list = False):
     # create list of tuples with entities text and list of QID and descriptions in wikidata - new function
     # tuple: (Beograd, [Q371, 'City in Serbia'])
     entities = []
@@ -73,6 +73,8 @@ def do_nel(text):
             doc_nel = nlp_nel(text_chunk)
             entities += [x for x in doc_nel.ents if x.kb_id_ != 'NIL']
 
+    if return_list:
+        return entities
     return {x.orth_: x for x in entities}
 
 
@@ -96,9 +98,8 @@ def apply_NEL_model_mono(text):
 def apply_NEL_model_mono_onchunk(text_chunk):
     move_p = 0
     # apply NEL model to input text
-    Dict = do_nel(text_chunk)
-    for entx in Dict.keys():
-        ent = Dict.get(entx)
+    list = do_nel(text_chunk, return_list=True)
+    for ent in list:
         QID = ent.kb_id_
         Desc = fetch_name_and_definition_from_wikipedia(QID)
         start = move_p + ent.start_char
